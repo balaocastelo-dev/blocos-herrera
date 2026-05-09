@@ -9,74 +9,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <style>
         .font-oswald { font-family: 'Oswald', sans-serif; }
-        .logo-3d {
-            color: #ea580c;
-            text-shadow: 
-                1px 1px 0px #9a3412,
-                2px 2px 0px #9a3412,
-                3px 3px 0px #9a3412,
-                4px 4px 0px #9a3412;
-            transition: all 0.3s ease;
-            display: inline-block;
-        }
-        .logo-3d:hover {
-            transform: translateY(-2px) rotateX(10deg) rotateY(-10deg);
-            text-shadow: 
-                1px 1px 0px #9a3412,
-                2px 2px 0px #9a3412,
-                3px 3px 0px #9a3412,
-                4px 4px 0px #9a3412,
-                5px 5px 10px rgba(0,0,0,0.3);
-        }
-        .parallax-video {
-            position: relative;
+        .parallax-header {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://raw.githubusercontent.com/balaocastelo-dev/blocos-herrera/master/parallax-blocks.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 60vh;
-            overflow: hidden;
             display: flex;
             align-items: center;
             justify-content: center;
-        }
-        .parallax-video iframe {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100vw;
-            height: 100vh;
-            transform: translate(-50%, -50%);
-            pointer-events: none;
-            z-index: -1;
-        }
-        .video-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.5);
-            z-index: 0;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900 font-inter">
     <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <a href="index.html" class="text-3xl font-black logo-3d font-oswald tracking-tighter">OLARIA HERRERA</a>
+            <a href="index.html">
+                <img src="https://raw.githubusercontent.com/balaocastelo-dev/blocos-herrera/master/logo.jpg" alt="Olaria Herrera" class="h-12 md:h-16">
+            </a>
             <nav class="hidden md:flex space-x-8 font-semibold">
                 <a href="index.html" class="hover:text-orange-600 transition">Início</a>
                 <a href="blocos.html" class="text-orange-600 transition border-b-2 border-orange-600">Blocos</a>
+                <a href="revestimentos.html" class="hover:text-orange-600 transition">Revestimentos</a>
                 <a href="index.html#orcamento" class="hover:text-orange-600 transition">Orçamento</a>
+                <a href="index.html#contato" class="hover:text-orange-600 transition">Contato</a>
             </nav>
             <a href="https://wa.me/5519984515960" target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">WhatsApp</a>
         </div>
     </header>
 
     <main class="pt-20">
-        <!-- Video Parallax Section -->
-        <section class="parallax-video">
-            <div class="video-overlay"></div>
-            <iframe src="https://www.youtube.com/embed/nzUsq1lbKzI?autoplay=1&mute=1&loop=1&playlist=nzUsq1lbKzI&controls=0&showinfo=0&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
-            <div class="relative z-10 text-center text-white px-4">
-                <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-4">BLOCOS ESTRUTURAIS</h1>
+        <!-- Parallax Header Section -->
+        <section class="parallax-header text-white text-center px-4">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-4 tracking-tight">BLOCOS ESTRUTURAIS</h1>
                 <p class="text-xl md:text-2xl italic">Qualidade Aveiro com o melhor atendimento de Campinas</p>
             </div>
         </section>
@@ -88,27 +55,32 @@
                     <!-- Product Loop (Extracted from Aveiro with 100% markup) -->
                     <script>
                         const blocos = [
-                            { name: "Bloco 14x19x39 Estrutural Vazado 3,0 MPa", price: 7.36 },
-                            { name: "Bloco Pilar 29x19x29 Estrutural", price: 22.34 },
-                            { name: "Bloco 19x19x39 3,0 MPa Estrutural Vazado", price: 9.22 },
-                            { name: "Canaleta 14x19x39 Estrutural", price: 9.22 },
-                            { name: "Bloco 14x19x29 Estrutural 4,5 MPa", price: 7.88 },
-                            { name: "Canaleta 14x19x29 Estrutural", price: 8.08 },
-                            { name: "Meio Bloco 14x19x14", price: 4.78 },
-                            { name: "Bloco 09x19x39 3,0 MPa Estrutural", price: 6.40 },
-                            { name: "Meio Bloco 09x19x19", price: 3.94 },
-                            { name: "Canaleta 09x19x39", price: 8.28 },
-                            { name: "Meia Canaleta 09x19x19", price: 4.26 },
-                            { name: "Meio Bloco 19x19x19", price: 6.10 },
-                            { name: "Canaleta 19x19x39", price: 11.82 },
-                            { name: "Bloco 19x19x39 4,5 MPa", price: 10.54 },
-                            { name: "Meia Canaleta 14x19x19", price: 5.26 }
+                            { name: "Piso Intertravado 16 faces (Onda) 11x22x06 - 35MPa", price: 3.78, img: "https://static.wixstatic.com/media/2d7880_894de5958ce74b52a16a6a536e74e712~mv2.jpg/v1/fill/w_252,h_252,al_c,lg_1,q_80,enc_avif,quality_auto/2d7880_894de5958ce74b52a16a6a536e74e712~mv2.jpg" },
+                            { name: "Piso Intertravado Retangular 10x20x06 - 35MPa", price: 3.02, img: "https://static.wixstatic.com/media/2d7880_9f57a72ebdda4682bcd9c2512b18a234~mv2.jpg/v1/fill/w_460,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_9f57a72ebdda4682bcd9c2512b18a234~mv2.jpg" },
+                            { name: "Bloco 14x19x39 Estrutural Vazado 3,0 MPa ( Sem fundo )", price: 7.36, img: "https://static.wixstatic.com/media/2d7880_3bad9af6c0844a3eb332e04af6dedde3~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_3bad9af6c0844a3eb332e04af6dedde3~mv2.png" },
+                            { name: "Bloco Pilar 29x19x29 Estrutural", price: 22.34, img: "https://static.wixstatic.com/media/2d7880_028e7a897d0e4977ac649a0f716f5024~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_028e7a897d0e4977ac649a0f716f5024~mv2.png" },
+                            { name: "Bloco Jardim Vertical 21x19x39", price: 31.00, img: "https://static.wixstatic.com/media/2d7880_a5b0ef52cc6b495099939708c17e9132~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_a5b0ef52cc6b495099939708c17e9132~mv2.png" },
+                            { name: "Bloco 19x19x39 3,0 MPa Estrutural Vazado ( Sem fundo )", price: 9.22, img: "https://static.wixstatic.com/media/2d7880_0c5d884df5164a30ad1876c1a7ee52bd~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_0c5d884df5164a30ad1876c1a7ee52bd~mv2.png" },
+                            { name: "Canaleta 14x19x39 Estrutural", price: 9.22, img: "https://static.wixstatic.com/media/2d7880_3d4936a89d58444a91ba0883e3d1c53b~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_3d4936a89d58444a91ba0883e3d1c53b~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Bloco 14x19x29 Estrutural 4,5 MPa", price: 7.88, img: "https://static.wixstatic.com/media/2d7880_46f2eb3d3cf141dd84aeb3b93f86f019~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_46f2eb3d3cf141dd84aeb3b93f86f019~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Canaleta 14x19x29 Estrutural", price: 8.08, img: "https://static.wixstatic.com/media/2d7880_356a919f1fa14149938950f923e7a6c5~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_356a919f1fa14149938950f923e7a6c5~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Meio Bloco 14x19x14", price: 4.78, img: "https://static.wixstatic.com/media/2d7880_30a270b564ad4f959ecf0eee6e1902eb~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_30a270b564ad4f959ecf0eee6e1902eb~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Bloco 09x19x39 3,0 MPa Estrutural ( Sem fundo )", price: 6.40, img: "https://static.wixstatic.com/media/2d7880_565031a70e14493182833932780cc783~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_565031a70e14493182833932780cc783~mv2.png" },
+                            { name: "Meio Bloco 09x19x19", price: 3.94, img: "https://static.wixstatic.com/media/2d7880_b6fb106f8ad7448ead25085b5661311f~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_b6fb106f8ad7448ead25085b5661311f~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Canaleta 09x19x39", price: 8.28, img: "https://static.wixstatic.com/media/2d7880_4aa9f2932a0e4494845bd22e9906bd45~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_4aa9f2932a0e4494845bd22e9906bd45~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Meia Canaleta 09x19x19", price: 4.26, img: "https://static.wixstatic.com/media/2d7880_a32a852bdb524db0a7a87784168d6c5e~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_a32a852bdb524db0a7a87784168d6c5e~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Meio Bloco 19x19x19", price: 6.10, img: "https://static.wixstatic.com/media/2d7880_6e6e730296e54a579d2c96024a834cfe~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_6e6e730296e54a579d2c96024a834cfe~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Canaleta 19x19x39", price: 11.82, img: "https://static.wixstatic.com/media/2d7880_089242993348462197cc84c286014030~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_089242993348462197cc84c286014030~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Bloco 19x19x39 4,5 MPa ( Estrutural Vazado )", price: 10.54, img: "https://static.wixstatic.com/media/2d7880_d0bf06948bc04a83ad69c20f10ae6e50~mv2.jpg/v1/fill/w_460,h_460,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_d0bf06948bc04a83ad69c20f10ae6e50~mv2.jpg" },
+                            { name: "Meia Canaleta 14x19x19", price: 5.26, img: "https://static.wixstatic.com/media/2d7880_bf5e870e6055470cbc58fb42e490ad6c~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_bf5e870e6055470cbc58fb42e490ad6c~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Meio Bloco 14x19x19", price: 4.92, img: "https://static.wixstatic.com/media/2d7880_465c72e8624047b3aace7519fcb3de6e~mv2_d_5472_3648_s_4_2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_465c72e8624047b3aace7519fcb3de6e~mv2_d_5472_3648_s_4_2.png" },
+                            { name: "Bloco 14x19x39 4,5 MPa Estrutural ( Sem Fundo )", price: 8.50, img: "https://static.wixstatic.com/media/2d7880_603946cae5574172a9f53dae3753ba1b~mv2.png/v1/fill/w_460,h_460,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d7880_603946cae5574172a9f53dae3753ba1b~mv2.png" }
                         ];
 
                         document.write(blocos.map(bloco => `
                             <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
                                 <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
-                                    <img src="https://p16-cc-image-search-sign-sg.ibyteimg.com/tos-alisg-i-h9hire4aei-sg/image/8c7ae78baf2278ac8b579789a5355b77~tplv-h9hire4aei-image.jpeg?rk3s=add9cc80&x-expires=1783475163&x-signature=tSrR03D06iuWmwNlXPGbsJp9t6o%3D" class="max-h-full max-w-full object-contain" alt="${bloco.name}">
+                                    <img src="${bloco.img}" class="max-h-full max-w-full object-contain" alt="${bloco.name}">
                                 </div>
                                 <div class="p-6">
                                     <h3 class="font-bold text-lg mb-2 h-14 overflow-hidden">${bloco.name}</h3>

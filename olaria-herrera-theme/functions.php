@@ -19,6 +19,11 @@ function olaria_herrera_scripts() {
     
     // Custom Scripts
     wp_enqueue_script('olaria-herrera-calculator', get_template_directory_uri() . '/calculator.js', array(), '1.0', true);
+    
+    // Pass theme directory URI to JS
+    wp_localize_script('olaria-herrera-calculator', 'themeData', array(
+        'templateDir' => get_template_directory_uri()
+    ));
 }
 add_action('wp_enqueue_scripts', 'olaria_herrera_scripts');
 
