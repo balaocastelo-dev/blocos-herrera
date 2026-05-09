@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olaria Herrera - Blocos de Concreto e Materiais de Construção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        [x-cloak] { display: none !important; }
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax-hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1590069230002-70cc6a474351?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            height: 100vh;
+        }
+        .parallax-section {
+            background-image: linear-gradient(rgba(249, 115, 22, 0.8), rgba(249, 115, 22, 0.8)), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            min-height: 400px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-inter">
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl font-bold text-orange-600 font-oswald">OLARIA HERRERA</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#home" class="hover:text-orange-600 transition">Início</a>
+                <a href="#produtos" class="hover:text-orange-600 transition">Produtos</a>
+                <a href="#orcamento" class="hover:text-orange-600 transition">Orçamento</a>
+                <a href="#contato" class="hover:text-orange-600 transition">Contato</a>
+            </nav>
+            <a href="https://wa.me/5519984515960?text=Olá! Gostaria de fazer um orçamento." target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition flex items-center space-x-2">
+                <span>WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="parallax parallax-hero flex items-center justify-center text-center text-white px-4">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-6 tracking-tight">OLARIA HERRERA</h1>
+                <p class="text-xl md:text-2xl mb-8 font-light italic">Blocos Estruturais, Areia e Pedra com Entrega em 24 Horas</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#produtos" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl">Ver Produtos</a>
+                    <a href="#orcamento" class="bg-white hover:bg-gray-100 text-orange-600 px-8 py-4 rounded-lg font-bold text-lg transition shadow-xl">Fazer Orçamento</a>
+                </div>
+                <p class="mt-8 text-orange-400 font-bold uppercase tracking-widest">Frete Grátis para Campinas | Pedido Mín. 1000 Blocos</p>
+            </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="py-16 bg-white border-b">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Entrega em 24h</h3>
+                    <p class="text-gray-600">Rapidez total para sua obra não parar.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Qualidade Superior</h3>
+                    <p class="text-gray-600">Blocos estruturais de alta resistência.</p>
+                </div>
+                <div class="p-6">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Campinas e Região</h3>
+                    <p class="text-gray-600">Frete grátis em toda a cidade de Campinas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="produtos" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold font-oswald mb-4">NOSSOS PRODUTOS</h2>
+                    <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
+                    <p class="mt-4 text-gray-600">Preços competitivos e materiais de primeira linha.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Products list -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://p16-cc-image-search-sign-sg.ibyteimg.com/tos-alisg-i-h9hire4aei-sg/image/8c7ae78baf2278ac8b579789a5355b77~tplv-h9hire4aei-image.jpeg?rk3s=add9cc80&x-expires=1783475163&x-signature=tSrR03D06iuWmwNlXPGbsJp9t6o%3D" alt="Bloco 14x19x39" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg mb-2">Bloco 14x19x39 Estrutural</h3>
+                            <p class="text-orange-600 text-2xl font-bold mb-4">R$ 7,36 <span class="text-sm text-gray-500 font-normal">/ Unidade</span></p>
+                            <a href="https://wa.me/5519984515960?text=Gostaria de saber mais sobre Bloco 14x19x39 Estrutural" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orçar no WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://p16-cc-image-search-sign-sg.ibyteimg.com/tos-alisg-i-h9hire4aei-sg/image/d4ca0ab6a853a6cb8306755511bf55a2~tplv-h9hire4aei-image.jpeg?rk3s=add9cc80&x-expires=1783475163&x-signature=hHF7C2RuaKjqlIMchihDmGKzfn4%3D" alt="Bloco 19x19x39" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg mb-2">Bloco 19x19x39 Estrutural</h3>
+                            <p class="text-orange-600 text-2xl font-bold mb-4">R$ 9,22 <span class="text-sm text-gray-500 font-normal">/ Unidade</span></p>
+                            <a href="https://wa.me/5519984515960?text=Gostaria de saber mais sobre Bloco 19x19x39 Estrutural" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orçar no WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1533460004989-cef01064af7c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Areia" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg mb-2">Areia (Fina/Média/Grossa)</h3>
+                            <p class="text-orange-600 text-2xl font-bold mb-4">R$ 700,00 <span class="text-sm text-gray-500 font-normal">/ Caminhão 7m³</span></p>
+                            <a href="https://wa.me/5519984515960?text=Gostaria de saber mais sobre Areia" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orçar no WhatsApp</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+                        <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pedra" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="font-bold text-lg mb-2">Pedra e Pedrisco</h3>
+                            <p class="text-orange-600 text-2xl font-bold mb-4">R$ 850,00 <span class="text-sm text-gray-500 font-normal">/ Caminhão 7m³</span></p>
+                            <a href="https://wa.me/5519984515960?text=Gostaria de saber mais sobre Pedra" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orçar no WhatsApp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Divider -->
+        <section class="parallax parallax-section flex items-center justify-center text-white py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold font-oswald mb-6">CONSTRUA COM QUEM ENTENDE</h2>
+                <p class="text-xl max-w-2xl mx-auto">Desde blocos estruturais até acabamentos para piscina, a Olaria Herrera é sua parceira em Campinas.</p>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section id="orcamento" class="py-20 bg-white" x-data="{
+            area: 0,
+            length: 0,
+            height: 0,
+            calcMode: 'area',
+            results: { blocks: 0, cement: 0, iron: 0 },
+            calculate() {
+                let totalArea = this.calcMode === 'area' ? parseFloat(this.area) : (parseFloat(this.length) * parseFloat(this.height));
+                if (totalArea > 0) {
+                    this.results.blocks = Math.ceil(totalArea * 12.5);
+                    this.results.cement = Math.ceil(totalArea * 0.5);
+                    this.results.iron = Math.ceil(totalArea * 2.5);
+                } else {
+                    this.results.blocks = 0; this.results.cement = 0; this.results.iron = 0;
+                }
+            },
+            getWhatsAppLink() {
+                const text = `Olá! Fiz um orçamento no site:\nÁrea: ${this.calcMode === 'area' ? this.area + 'm²' : this.length + 'm x ' + this.height + 'm'}\n\n*Necessidade Estimada:*\n- Blocos: ${this.results.blocks}\n- Cimento: ${this.results.cement} sacos\n- Ferro: ${this.results.iron}m\n\nGostaria de validar esse orçamento.`;
+                return `https://wa.me/5519984515960?text=${encodeURIComponent(text)}`;
+            }
+        }">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold font-oswald mb-4">CALCULADORA DE MATERIAIS</h2>
+                    <div class="w-24 h-1 bg-orange-600 mx-auto mb-6"></div>
+                    <p class="text-gray-600">Informe a metragem e descubra quanto material você vai precisar.</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-inner border">
+                    <div class="flex mb-8 justify-center space-x-4">
+                        <button @click="calcMode = 'area'" :class="calcMode === 'area' ? 'bg-orange-600 text-white' : 'bg-gray-200'" class="px-6 py-2 rounded-full font-bold transition">Por Área (m²)</button>
+                        <button @click="calcMode = 'dims'" :class="calcMode === 'dims' ? 'bg-orange-600 text-white' : 'bg-gray-200'" class="px-6 py-2 rounded-full font-bold transition">Por Dimensões</button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div class="space-y-6">
+                            <div x-show="calcMode === 'area'">
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Área Total das Paredes (m²)</label>
+                                <input type="number" x-model="area" @input="calculate" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-orange-500 outline-none" placeholder="Ex: 50">
+                            </div>
+                            <div x-show="calcMode === 'dims'" class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Comprimento (m)</label>
+                                    <input type="number" x-model="length" @input="calculate" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-orange-500 outline-none" placeholder="Ex: 10">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Altura (m)</label>
+                                    <input type="number" x-model="height" @input="calculate" class="w-full px-4 py-3 rounded-lg border focus:ring-2 focus:ring-orange-500 outline-none" placeholder="Ex: 2.8">
+                                </div>
+                            </div>
+
+                            <div class="bg-orange-50 p-6 rounded-xl border border-orange-100">
+                                <h4 class="font-bold text-orange-800 mb-4">Estimativa de Material:</h4>
+                                <ul class="space-y-3">
+                                    <li class="flex justify-between"><span>Blocos (14x19x39):</span> <span class="font-bold text-orange-600" x-text="results.blocks">0</span></li>
+                                    <li class="flex justify-between"><span>Cimento (Sacos):</span> <span class="font-bold text-orange-600" x-text="results.cement">0</span></li>
+                                    <li class="flex justify-between"><span>Ferro (Metros):</span> <span class="font-bold text-orange-600" x-text="results.iron">0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="p-6 bg-white rounded-xl shadow-md">
+                                <p class="text-sm text-gray-500 mb-4">*Cálculo baseado em padrões médios de construção.</p>
+                                <a :href="getWhatsAppLink()" target="_blank" class="bg-green-500 hover:bg-green-600 text-white w-full py-4 rounded-xl font-bold text-lg inline-flex items-center justify-center space-x-2 transition">
+                                    <span>Enviar no WhatsApp</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="contato" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold font-oswald mb-6">ONDE ESTAMOS</h2>
+                    <p class="text-lg text-gray-600 mb-8">Rua Julia Aberle Fritz, 200 - Pq Vista Alegre, Campinas/SP</p>
+                    <p class="text-lg font-bold">Telefone: (19) 98451-5960</p>
+                    <p class="text-orange-600 font-bold mt-4">ENTREGA EM 24 HORAS</p>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-2xl h-64 bg-gray-300 flex items-center justify-center">
+                    <p class="text-gray-600 italic">Mapa Interativo (Campinas - Pq Vista Alegre)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <p>&copy; 2026 Olaria Herrera. Pedido mínimo 1000 blocos. Frete grátis Campinas.</p>
+    </footer>
+</body>
+</html>
