@@ -23,6 +23,15 @@ export default function Home() {
     { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Champagne Areia De", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_champagne_areia_de_1570435806_3697_300x300.jpg" },
   ];
 
+  const areiaPedra = [
+    { name: "Areia Fina", price: "150,00", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s" },
+    { name: "Areia Média", price: "150,00", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s" },
+    { name: "Areia Grossa", price: "150,00", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s" },
+    { name: "Pedrisco", price: "200,00", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" },
+    { name: "Pedra 2", price: "200,00", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" },
+    { name: "Pedra 4", price: "200,00", img: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -57,26 +66,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Products Grid */}
-      <section id="produtos" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold font-oswald mb-4 uppercase">Outros Produtos Para Sua Obra</h2>
-            <div className="w-24 h-1 bg-orange-600 mx-auto"></div>
-            <p className="mt-4 text-gray-600">Materiais basicos, acabamentos e insumos para obras em Campinas e regiao.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
-            <ProductCard id="cimento-home" title="Cimento Votoran (50kg)" price="R$ 37,50" unit="/ Saco" img="https://images.tcdn.com.br/img/img_prod/1110543/cimento_todas_obras_50kg_cpii_votoran_17_1_0920c5d011f0458129e71c9985223e71.jpg" />
-            <ProductCard id="areia-home" title="Areia (Fina/Media/Grossa)" price="R$ 150,00" unit="/ Metro (Min. 7m)" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s" />
-            <ProductCard id="pedra-home" title="Pedra e Pedrisco" price="R$ 200,00" unit="/ Metro (Min. 7m)" img="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" />
-            <ProductCard id="piscina-home" title="Revestimentos (Piscina)" price="Consulte" unit="/ m²" img="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" link="/revestimentos" />
-            <ProductCard id="bordas-home" title="Bordas Atérmicas" price="Consulte" unit="/ Unidade" img="https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" link="/bordas-atermicas" />
-          </div>
-        </div>
-      </section>
-
       {/* Product Carousels */}
+      <ProductCarousel title="Areia e Pedra" products={areiaPedra} idPrefix="areia-pedra-home" />
       <ProductCarousel title="Destaques em Revestimentos" products={revestimentos} idPrefix="rev-home" />
       <ProductCarousel title="Destaques em Bordas Atérmicas" products={bordas} idPrefix="borda-home-carousel" />
 

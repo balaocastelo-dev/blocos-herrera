@@ -119,52 +119,57 @@
 
     <section id="produtos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold font-oswald mb-4 uppercase">Outros Produtos Para Sua Obra</h2>
-                <div class="w-24 h-1 bg-orange-600 mx-auto"></div>
-                <p class="mt-4 text-gray-600">Materiais basicos, acabamentos e insumos para obras em Campinas e regiao.</p>
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold font-oswald uppercase mb-4">Areia e Pedra</h2>
+                    <div class="w-24 h-1 bg-orange-600"></div>
+                </div>
+                <div class="flex gap-2">
+                    <button id="carousel-prev" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="carousel-next" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+            <div id="areia-pedra-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
                 <?php
-                $products = [
-                    ['name' => 'Cimento Votoran (50kg)', 'price' => 37.50, 'image' => get_template_directory_uri() . '/assets/img/cimento.jpg', 'unit' => 'Saco', 'id' => 'cimento-home'],
-                    ['name' => 'Areia (Fina/Média/Grossa)', 'price' => 150.00, 'image' => get_template_directory_uri() . '/assets/img/areia.jpg', 'unit' => 'Metro (Mín. 7m)', 'id' => 'areia-home'],
-                    ['name' => 'Pedra e Pedrisco', 'price' => 200.00, 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'unit' => 'Metro (Mín. 7m)', 'id' => 'pedra-home'],
-                    ['name' => 'Revestimentos (Piscina)', 'price' => 0, 'image' => get_template_directory_uri() . '/assets/img/piscina.jpg', 'unit' => 'm²', 'id' => 'piscina-home', 'page' => 'revestimentos'],
-                    ['name' => 'Bordas Atérmicas', 'price' => 0, 'image' => 'https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg', 'unit' => 'Unidade', 'id' => 'bordas-home', 'page' => 'bordas-atermicas'],
+                $areiaPedra = [
+                    ['name' => 'Areia Fina', 'price' => '150,00', 'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s', 'id' => 'areia-fina'],
+                    ['name' => 'Areia Média', 'price' => '150,00', 'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s', 'id' => 'areia-media'],
+                    ['name' => 'Areia Grossa', 'price' => '150,00', 'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s', 'id' => 'areia-grossa'],
+                    ['name' => 'Pedrisco', 'price' => '200,00', 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'id' => 'pedrisco'],
+                    ['name' => 'Pedra 2', 'price' => '200,00', 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'id' => 'pedra-2'],
+                    ['name' => 'Pedra 4', 'price' => '200,00', 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'id' => 'pedra-4'],
                 ];
 
-                foreach ($products as $product): 
-                    $adminId = $product['id'];
+                foreach ($areiaPedra as $product): 
                     ?>
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                        <div class="h-48 bg-gray-50 flex items-center justify-center p-2">
-                            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="<?php echo $adminId; ?>">
+                    <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col snap-start hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
+                            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="<?php echo $product['id']; ?>">
                         </div>
-                        <div class="p-6 text-center">
-                            <h3 class="font-bold text-lg mb-2"><?php echo $product['name']; ?></h3>
-                            <p class="text-orange-600 text-2xl font-bold mb-4">
-                                <span data-admin-id="<?php echo $adminId; ?>" data-admin-type="price">
-                                <?php if ($product['price'] > 0): ?>
-                                    R$ <?php echo number_format($product['price'], 2, ',', '.'); ?>
-                                <?php else: ?>
-                                    Consulte
-                                <?php endif; ?>
-                                </span>
-                                <span class="text-sm text-gray-500 font-normal">/ <?php echo $product['unit']; ?></span>
-                            </p>
-                            <?php if (isset($product['page'])): ?>
-                                <a href="<?php echo get_permalink(get_page_by_path($product['page'])); ?>" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Ver Catalogo</a>
-                            <?php else: ?>
-                                <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Gostaria de saber mais sobre ' . $product['name']); ?>" class="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orcar no WhatsApp</a>
-                            <?php endif; ?>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="font-bold text-sm mb-2 h-12 overflow-hidden"><?php echo $product['name']; ?></h3>
+                            <p class="text-orange-600 text-xl font-bold mb-4 mt-auto">R$ <span data-admin-id="<?php echo $product['id']; ?>" data-admin-type="price"><?php echo $product['price']; ?></span></p>
+                            <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar ' . $product['name'] . ' para uma obra em Campinas.'); ?>" class="block text-center bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 transition text-sm">Orcar no WhatsApp</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </div>
         </div>
     </section>
+
+    <script>
+        document.getElementById('carousel-prev').onclick = () => {
+            document.getElementById('areia-pedra-carousel').scrollBy({ left: -340, behavior: 'smooth' });
+        };
+        document.getElementById('carousel-next').onclick = () => {
+            document.getElementById('areia-pedra-carousel').scrollBy({ left: 340, behavior: 'smooth' });
+        };
+    </script>
 
     <section class="parallax parallax-section flex items-center justify-center text-white py-24">
         <div class="container mx-auto px-4 text-center">
