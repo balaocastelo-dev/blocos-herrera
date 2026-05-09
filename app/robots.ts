@@ -1,4 +1,11 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://olariaherrera.com.br/sitemap.xml
+import { MetadataRoute } from 'next'
+ 
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+    },
+    sitemap: 'https://olariaherrera.com.br/sitemap.xml',
+  }
+}
