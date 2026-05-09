@@ -119,22 +119,22 @@
 
     <section id="produtos" class="py-20 bg-gray-50">
         <div class="container mx-auto px-4">
+            <!-- Areia e Pedra Carousel -->
             <div class="flex justify-between items-end mb-12">
                 <div>
                     <h2 class="text-4xl font-bold font-oswald uppercase mb-4">Areia e Pedra</h2>
                     <div class="w-24 h-1 bg-orange-600"></div>
                 </div>
                 <div class="flex gap-2">
-                    <button id="carousel-prev" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                    <button id="areia-prev" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
                     </button>
-                    <button id="carousel-next" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                    <button id="areia-next" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                     </button>
                 </div>
             </div>
-
-            <div id="areia-pedra-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+            <div id="areia-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 mb-16" style="scrollbar-width: none; -ms-overflow-style: none;">
                 <?php
                 $areiaPedra = [
                     ['name' => 'Areia Fina', 'price' => '150,00', 'image' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s', 'id' => 'areia-fina'],
@@ -144,17 +144,88 @@
                     ['name' => 'Pedra 2', 'price' => '200,00', 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'id' => 'pedra-2'],
                     ['name' => 'Pedra 4', 'price' => '200,00', 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'id' => 'pedra-4'],
                 ];
-
-                foreach ($areiaPedra as $product): 
-                    ?>
+                foreach ($areiaPedra as $p): ?>
                     <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col snap-start hover:shadow-xl transition-shadow">
                         <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
-                            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="<?php echo $product['id']; ?>">
+                            <img src="<?php echo $p['image']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="<?php echo $p['id']; ?>">
                         </div>
                         <div class="p-6 flex-grow flex flex-col">
-                            <h3 class="font-bold text-sm mb-2 h-12 overflow-hidden"><?php echo $product['name']; ?></h3>
-                            <p class="text-orange-600 text-xl font-bold mb-4 mt-auto">R$ <span data-admin-id="<?php echo $product['id']; ?>" data-admin-type="price"><?php echo $product['price']; ?></span></p>
-                            <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar ' . $product['name'] . ' para uma obra em Campinas.'); ?>" class="block text-center bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 transition text-sm">Orcar no WhatsApp</a>
+                            <h3 class="font-bold text-sm mb-2 h-12 overflow-hidden"><?php echo $p['name']; ?></h3>
+                            <p class="text-orange-600 text-xl font-bold mb-4 mt-auto">R$ <span data-admin-id="<?php echo $p['id']; ?>" data-admin-type="price"><?php echo $p['price']; ?></span></p>
+                            <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar ' . $p['name'] . ' para uma obra em Campinas.'); ?>" class="block text-center bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 transition text-sm">Orcar no WhatsApp</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Revestimentos Carousel -->
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold font-oswald uppercase mb-4">Destaques em Revestimentos</h2>
+                    <div class="w-24 h-1 bg-orange-600"></div>
+                </div>
+                <div class="flex gap-2">
+                    <button id="rev-prev" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="rev-next" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="rev-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4 mb-16" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <?php
+                $revestimentos = [
+                    ['name' => "Noronha Jade Mesh Eliane", 'price' => "138,05", 'img' => "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_noronha_jade_30x40,10cm_eliane_92004465_e723_300x300.JPG"],
+                    ['name' => "Noronha Mar Mesh Eliane", 'price' => "138,05", 'img' => "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_noronha_mar_30x40,1cm_eliane_92009582_4af0_300x300.JPG"],
+                    ['name' => "Hijau Verde Artens", 'price' => "184,11", 'img' => "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_brilhante_hijau_verde_20x20cm_91920073_7069_300x300.JPG"],
+                    ['name' => "Hijau Azul Artens", 'price' => "184,11", 'img' => "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_brilhante_hijau_azul_20x20cm_91920052_011b_300x300.JPG"],
+                ];
+                foreach ($revestimentos as $index => $r): ?>
+                    <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col snap-start hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
+                            <img src="<?php echo $r['img']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="rev-home-<?php echo $index; ?>">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="font-bold text-sm mb-2 h-12 overflow-hidden"><?php echo $r['name']; ?></h3>
+                            <p class="text-orange-600 text-xl font-bold mb-4 mt-auto">R$ <span data-admin-id="rev-home-<?php echo $index; ?>" data-admin-type="price"><?php echo $r['price']; ?></span></p>
+                            <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar ' . $r['name'] . ' para uma obra em Campinas.'); ?>" class="block text-center bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 transition text-sm">Orcar no WhatsApp</a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Bordas Carousel -->
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold font-oswald uppercase mb-4">Destaques em Bordas Atérmicas</h2>
+                    <div class="w-24 h-1 bg-orange-600"></div>
+                </div>
+                <div class="flex gap-2">
+                    <button id="borda-prev" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button id="borda-next" class="p-3 rounded-full border border-gray-200 hover:bg-orange-600 hover:text-white transition shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+            <div id="borda-carousel" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-8 -mx-4 px-4" style="scrollbar-width: none; -ms-overflow-style: none;">
+                <?php
+                $bordas = [
+                    ['name' => "Borda Atérmica 50x25cm Premium", 'price' => "69,20", 'img' => "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg"],
+                    ['name' => "Borda Malibu Cinza 50x20cm", 'price' => "52,53", 'img' => "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png"],
+                    ['name' => "Borda Havaí 100x27cm", 'price' => "318,37", 'img' => "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg"],
+                ];
+                foreach ($bordas as $index => $b): ?>
+                    <div class="min-w-[280px] md:min-w-[320px] bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 flex flex-col snap-start hover:shadow-xl transition-shadow">
+                        <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
+                            <img src="<?php echo $b['img']; ?>" class="max-h-full max-w-full object-contain" data-admin-id="borda-home-<?php echo $index; ?>">
+                        </div>
+                        <div class="p-6 flex-grow flex flex-col">
+                            <h3 class="font-bold text-sm mb-2 h-12 overflow-hidden"><?php echo $b['name']; ?></h3>
+                            <p class="text-orange-600 text-xl font-bold mb-4 mt-auto">R$ <span data-admin-id="borda-home-<?php echo $index; ?>" data-admin-type="price"><?php echo $b['price']; ?></span></p>
+                            <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar ' . $b['name'] . ' para uma obra em Campinas.'); ?>" class="block text-center bg-green-500 text-white font-bold py-2 rounded-lg hover:bg-green-600 transition text-sm">Orcar no WhatsApp</a>
                         </div>
                     </div>
                 <?php endforeach; ?>
@@ -163,12 +234,14 @@
     </section>
 
     <script>
-        document.getElementById('carousel-prev').onclick = () => {
-            document.getElementById('areia-pedra-carousel').scrollBy({ left: -340, behavior: 'smooth' });
+        const setupCarousel = (id, prevId, nextId) => {
+            const el = document.getElementById(id);
+            document.getElementById(prevId).onclick = () => el.scrollBy({ left: -340, behavior: 'smooth' });
+            document.getElementById(nextId).onclick = () => el.scrollBy({ left: 340, behavior: 'smooth' });
         };
-        document.getElementById('carousel-next').onclick = () => {
-            document.getElementById('areia-pedra-carousel').scrollBy({ left: 340, behavior: 'smooth' });
-        };
+        setupCarousel('areia-carousel', 'areia-prev', 'areia-next');
+        setupCarousel('rev-carousel', 'rev-prev', 'rev-next');
+        setupCarousel('borda-carousel', 'borda-prev', 'borda-next');
     </script>
 
     <section class="parallax parallax-section flex items-center justify-center text-white py-24">
