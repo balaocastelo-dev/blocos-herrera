@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocos Estruturais - Olaria Herrera</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        .font-oswald { font-family: 'Oswald', sans-serif; }
+        .parallax-video {
+            position: relative;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax-video iframe {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-inter">
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-orange-600 font-oswald">OLARIA HERRERA</a>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="index.html" class="hover:text-orange-600 transition">Início</a>
+                <a href="blocos.html" class="text-orange-600 transition border-b-2 border-orange-600">Blocos</a>
+                <a href="index.html#orcamento" class="hover:text-orange-600 transition">Orçamento</a>
+            </nav>
+            <a href="https://wa.me/5519984515960" target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition">WhatsApp</a>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Video Parallax Section -->
+        <section class="parallax-video">
+            <div class="video-overlay"></div>
+            <iframe src="https://www.youtube.com/embed/nzUsq1lbKzI?autoplay=1&mute=1&loop=1&playlist=nzUsq1lbKzI&controls=0&showinfo=0&rel=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+            <div class="relative z-10 text-center text-white px-4">
+                <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-4">BLOCOS ESTRUTURAIS</h1>
+                <p class="text-xl md:text-2xl italic">Qualidade Aveiro com o melhor atendimento de Campinas</p>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product Loop (Extracted from Aveiro with 100% markup) -->
+                    <script>
+                        const blocos = [
+                            { name: "Bloco 14x19x39 Estrutural Vazado 3,0 MPa", price: 7.36 },
+                            { name: "Bloco Pilar 29x19x29 Estrutural", price: 22.34 },
+                            { name: "Bloco 19x19x39 3,0 MPa Estrutural Vazado", price: 9.22 },
+                            { name: "Canaleta 14x19x39 Estrutural", price: 9.22 },
+                            { name: "Bloco 14x19x29 Estrutural 4,5 MPa", price: 7.88 },
+                            { name: "Canaleta 14x19x29 Estrutural", price: 8.08 },
+                            { name: "Meio Bloco 14x19x14", price: 4.78 },
+                            { name: "Bloco 09x19x39 3,0 MPa Estrutural", price: 6.40 },
+                            { name: "Meio Bloco 09x19x19", price: 3.94 },
+                            { name: "Canaleta 09x19x39", price: 8.28 },
+                            { name: "Meia Canaleta 09x19x19", price: 4.26 },
+                            { name: "Meio Bloco 19x19x19", price: 6.10 },
+                            { name: "Canaleta 19x19x39", price: 11.82 },
+                            { name: "Bloco 19x19x39 4,5 MPa", price: 10.54 },
+                            { name: "Meia Canaleta 14x19x19", price: 5.26 }
+                        ];
+
+                        document.write(blocos.map(bloco => `
+                            <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 border border-gray-100">
+                                <div class="h-48 bg-gray-50 flex items-center justify-center p-4">
+                                    <img src="https://p16-cc-image-search-sign-sg.ibyteimg.com/tos-alisg-i-h9hire4aei-sg/image/8c7ae78baf2278ac8b579789a5355b77~tplv-h9hire4aei-image.jpeg?rk3s=add9cc80&x-expires=1783475163&x-signature=tSrR03D06iuWmwNlXPGbsJp9t6o%3D" class="max-h-full max-w-full object-contain" alt="${bloco.name}">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="font-bold text-lg mb-2 h-14 overflow-hidden">${bloco.name}</h3>
+                                    <p class="text-orange-600 text-3xl font-bold mb-4">R$ ${bloco.price.toFixed(2).replace('.', ',')}</p>
+                                    <a href="https://wa.me/5519984515960?text=Gostaria de orçar ${bloco.name}" class="block text-center bg-orange-600 text-white font-bold py-3 rounded-lg hover:bg-orange-700 transition">Comprar no WhatsApp</a>
+                                </div>
+                            </div>
+                        `).join(''));
+                    </script>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 text-center">
+        <p>&copy; 2026 Olaria Herrera. Pedido mínimo 1000 blocos. Frete grátis Campinas.</p>
+    </footer>
+</body>
+</html>

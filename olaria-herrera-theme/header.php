@@ -22,10 +22,11 @@
                 <span class="text-2xl font-bold text-orange-600 font-oswald">OLARIA HERRERA</span>
             </div>
             <nav class="hidden md:flex space-x-8 font-semibold">
-                <a href="#home" class="hover:text-orange-600 transition">Início</a>
-                <a href="#produtos" class="hover:text-orange-600 transition">Produtos</a>
-                <a href="#orcamento" class="hover:text-orange-600 transition">Orçamento</a>
-                <a href="#contato" class="hover:text-orange-600 transition">Contato</a>
+                <a href="<?php echo home_url(); ?>" class="hover:text-orange-600 transition">Início</a>
+                <a href="<?php echo get_permalink(get_page_by_path('blocos')); ?>" class="hover:text-orange-600 transition">Blocos</a>
+                <a href="<?php echo home_url(); ?>#produtos" class="hover:text-orange-600 transition">Outros Produtos</a>
+                <a href="<?php echo home_url(); ?>#orcamento" class="hover:text-orange-600 transition">Orçamento</a>
+                <a href="<?php echo home_url(); ?>#contato" class="hover:text-orange-600 transition">Contato</a>
             </nav>
             <a href="https://wa.me/5519984515960?text=Olá! Gostaria de fazer um orçamento." target="_blank" class="bg-green-500 text-white px-6 py-2 rounded-full font-bold hover:bg-green-600 transition flex items-center space-x-2">
                 <span>WhatsApp</span>

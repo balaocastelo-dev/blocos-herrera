@@ -66,7 +66,9 @@
 
                 foreach ($products as $product): ?>
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-                        <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="w-full h-48 object-cover">
+                        <div class="h-48 bg-gray-50 flex items-center justify-center p-2">
+                            <img src="<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>" class="max-h-full max-w-full object-contain">
+                        </div>
                         <div class="p-6">
                             <h3 class="font-bold text-lg mb-2"><?php echo $product['name']; ?></h3>
                             <p class="text-orange-600 text-2xl font-bold mb-4">R$ <?php echo number_format($product['price'], 2, ',', '.'); ?> <span class="text-sm text-gray-500 font-normal">/ <?php echo $product['unit']; ?></span></p>
@@ -165,8 +167,8 @@
             <div class="rounded-2xl overflow-hidden shadow-2xl h-96">
                 <!-- Placeholder for map -->
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.868128456453!2d-47.1085!3d-22.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b6f7a6a7a6a7%3A0x0!2zMjLCsDU3JzAwLjAiUyA0N8KwMDYnMzAuNiJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.331291845166!2d-47.128624!3d-22.9379684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b87e7b68f61d%3A0x79461f6a1e36c53e!2sRua%20J%C3%BAlia%20Aberle%20Fritz%2C%20200%20-%20Parque%20Vista%20Alegre%2C%20Campinas%20-%20SP%2C%2013056-432!5e0!3m2!1spt-BR!2sbr!4v1715200000000!5m2!1spt-BR!2sbr" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
