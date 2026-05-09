@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://olariaherrera.com.br/sitemap.xml
