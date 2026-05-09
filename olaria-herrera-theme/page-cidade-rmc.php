@@ -11,7 +11,7 @@ if (!$city) {
         'name' => 'Campinas',
         'slug' => 'campinas',
         'headline' => 'Material de Construcao em Campinas',
-        'description' => 'A Olaria Herrera atende Campinas e RMC com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos.',
+        'description' => 'A Herrera Materiais para construcao e fabrica de blocos atende Campinas e RMC com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos.',
     );
 }
 
@@ -104,7 +104,7 @@ $all_cities = olaria_herrera_city_pages();
                 </div>
                 <div class="rounded-3xl border border-orange-100 bg-white p-8 shadow-xl">
                     <h2 class="mb-4 text-2xl font-bold">Solicite sua cotacao</h2>
-                    <p class="mb-6 text-gray-600">Fale agora com a Olaria Herrera para cotar material de construcao em <?php echo esc_html($city['name']); ?> e cidades proximas da RMC.</p>
+                    <p class="mb-6 text-gray-600">Fale agora com a Herrera Materiais para construcao e fabrica de blocos para cotar material de construcao em <?php echo esc_html($city['name']); ?> e cidades proximas da RMC.</p>
                     <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero cotar blocos, areia, pedra ou cimento para uma obra em ' . $city['name'] . '.'); ?>" target="_blank" class="inline-flex w-full justify-center rounded-xl bg-green-500 px-6 py-4 font-bold text-white transition hover:bg-green-600">Pedir cotacao agora</a>
                 </div>
             </div>
@@ -114,7 +114,7 @@ $all_cities = olaria_herrera_city_pages();
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="mb-12 text-center">
-                <h2 class="mb-4 text-4xl font-bold font-oswald uppercase">O que a Olaria Herrera entrega em <?php echo esc_html($city['name']); ?></h2>
+                <h2 class="mb-4 text-4xl font-bold font-oswald uppercase">O que a Herrera Materiais para construcao e fabrica de blocos entrega em <?php echo esc_html($city['name']); ?></h2>
                 <p class="mx-auto max-w-4xl text-gray-600">A pagina foi escrita para capturar busca local de alta intencao comercial e converter em WhatsApp com destaque para os principais materiais de construcao procurados na regiao.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -141,13 +141,13 @@ $all_cities = olaria_herrera_city_pages();
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 max-w-5xl">
             <div class="mb-12 text-center">
-                <h2 class="mb-4 text-4xl font-bold font-oswald uppercase">Perguntas frequentes sobre material de construcao em <?php echo esc_html($city['name']); ?></h2>
+                <h2 class="text-4xl font-bold font-oswald uppercase">Perguntas frequentes sobre material de construcao em <?php echo esc_html($city['name']); ?></h2>
                 <p class="text-gray-600">FAQ local para reforcar relevancia semantica e responder buscas reais de compra.</p>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
                 <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
                     <h3 class="mb-3 text-xl font-bold">Vocês entregam material de construcao em <?php echo esc_html($city['name']); ?>?</h3>
-                    <p class="text-gray-600">Sim. O atendimento comercial da Olaria Herrera e preparado para obras em <?php echo esc_html($city['name']); ?> e em cidades vizinhas da regiao metropolitana.</p>
+                    <p class="text-gray-600">Sim. O atendimento comercial da Herrera Materiais para construcao e fabrica de blocos e preparado para obras em <?php echo esc_html($city['name']); ?> e em cidades vizinhas da regiao metropolitana.</p>
                 </div>
                 <div class="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
                     <h3 class="mb-3 text-xl font-bold">Como pedir um orcamento rapido?</h3>
@@ -168,7 +168,7 @@ $all_cities = olaria_herrera_city_pages();
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <div class="mb-10 text-center">
-                <h2 class="mb-4 text-4xl font-bold font-oswald uppercase">Outras cidades da RMC</h2>
+                <h2 class="text-4xl font-bold font-oswald uppercase">Outras cidades da RMC</h2>
                 <p class="text-gray-600">Malha interna de links locais para ampliar relevancia e rastreamento.</p>
             </div>
             <div class="flex flex-wrap justify-center gap-3">

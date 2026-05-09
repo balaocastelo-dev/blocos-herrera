@@ -2,7 +2,7 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
                 <div>
-                    <h3 class="text-2xl font-bold text-orange-500 font-oswald mb-6">OLARIA HERRERA</h3>
+                    <h3 class="text-2xl font-bold text-orange-500 font-oswald mb-6 uppercase">Herrera Materiais para construcao e fabrica de blocos</h3>
                     <p class="text-gray-400">Material de construcao em Campinas com foco em blocos estruturais, areia, pedra, pedrisco e revestimentos para obras residenciais, comerciais e industriais.</p>
                 </div>
                 <div>
@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm space-y-2">
-                <p>&copy; <?php echo date('Y'); ?> Olaria Herrera. Todos os direitos reservados. Pedido minimo de 1000 blocos.</p>
+                <p>&copy; <?php echo date('Y'); ?> Herrera Materiais para construcao e fabrica de blocos. Todos os direitos reservados. Pedido minimo de 1000 blocos.</p>
                 <p>Palavras-chave locais: deposito de material de construcao em Campinas, blocos de concreto em Campinas, areia e pedra em Campinas e RMC.</p>
             </div>
         </div>

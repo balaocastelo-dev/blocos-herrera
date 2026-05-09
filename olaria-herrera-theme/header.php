@@ -29,7 +29,7 @@
     <header class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-sm border-b border-orange-100">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center gap-4">
             <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-center gap-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-herrera.jpg" alt="Olaria Herrera" class="h-12 md:h-16" data-admin-id="site-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-herrera.jpg" alt="Herrera Materiais para construcao e fabrica de blocos" class="h-12 md:h-16" data-admin-id="site-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
                 <span class="logo-fallback items-center rounded-xl bg-orange-600 px-4 py-2 text-lg font-black uppercase tracking-[0.2em] text-white">Herrera</span>
             </a>
             <nav class="hidden md:flex items-center space-x-6 font-semibold text-sm lg:text-base">

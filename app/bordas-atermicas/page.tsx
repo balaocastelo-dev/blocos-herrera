@@ -10,7 +10,7 @@ interface Product {
 
 export default function BordasAtermicasPage() {
   const bordas: Product[] = [
-    { name: "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", price: "69,20", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg" },
+    { name: "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", price: "69,20", img: "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" },
     { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Cinza Areia De Qua...", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png" },
     { name: "Borda Atérmica Piscina - Havaí 100 X 27,5 X 25 X 4 X 2,5cm F...", price: "318,37", img: "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg" },
     { name: "Borda Atérmica Piscina 50x15x1,5cm Cinza - Areia De Quartzo I...", price: "45,63", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x15x1,5cm_cinza_areia_de_quartzo_i_1570814144_b30e_300x300.jpg" },
@@ -48,7 +48,7 @@ export default function BordasAtermicasPage() {
 
   return (
     <main className="pt-20">
-      <section className="parallax-header text-white text-center px-4 h-[48vh] flex items-center justify-center bg-[url('https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg')] bg-fixed bg-center bg-no-repeat bg-cover">
+      <section className="parallax-header text-white text-center px-4 h-[48vh] flex items-center justify-center bg-[url('https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg')] bg-fixed bg-center bg-no-repeat bg-cover">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-extrabold font-oswald mb-4 tracking-tight uppercase">Bordas Atérmicas</h1>
           <p className="text-xl md:text-2xl italic">Acabamentos que não esquentam para sua piscina em Campinas e região</p>

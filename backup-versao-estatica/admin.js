@@ -1,7 +1,7 @@
 (function() {
     let inputBuffer = "";
     const secretCode = "56676009";
-    const storageKey = "olaria_herrera_admin_data";
+    const storageKey = "herrera_materiais_admin_data";
 
     // Carregar dados salvos
     let siteData = JSON.parse(localStorage.getItem(storageKey) || "{}");
@@ -47,7 +47,7 @@
         const panel = document.createElement('div');
         panel.style.cssText = 'background:white; padding:2rem; border-radius:1rem; width:90%; max-width:600px; max-height:80vh; overflow-y:auto; position:relative;';
         
-        let html = `<h2 style="font-size:1.5rem; font-weight:bold; margin-bottom:1rem; color:#ea580c;">Painel Admin - Olaria Herrera</h2>
+        let html = `<h2 style="font-size:1.5rem; font-weight:bold; margin-bottom:1rem; color:#ea580c;">Painel Admin - Herrera Materiais para construcao e fabrica de blocos</h2>
                     <p style="margin-bottom:1.5rem; color:#666;">Edite as URLs das fotos e os preços dos itens identificados.</p>
                     <div id="admin-items-list">`;
 

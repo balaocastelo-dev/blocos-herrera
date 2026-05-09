@@ -26,7 +26,7 @@ export const useAdmin = () => {
 };
 
 const SECRET_CODE = "56676009";
-const STORAGE_KEY = "olaria_herrera_admin_data";
+const STORAGE_KEY = "herrera_materiais_admin_data";
 
 export default function AdminProvider({ children }: { children: React.ReactNode }) {
   const [siteData, setSiteData] = useState<AdminData>({});
@@ -103,7 +103,7 @@ function AdminPanel() {
   return (
     <div className="fixed inset-0 bg-black/85 z-[9999] flex items-center justify-center p-4 font-sans">
       <div className="bg-white p-8 rounded-2xl w-full max-w-2xl max-h-[80vh] overflow-y-auto relative">
-        <h2 className="text-2xl font-bold mb-4 text-orange-600">Painel Admin - Olaria Herrera</h2>
+        <h2 className="text-2xl font-bold mb-4 text-orange-600">Painel Admin - Herrera Materiais para construcao e fabrica de blocos</h2>
         <p className="mb-6 text-gray-600">Edite as URLs das fotos e os preços dos itens identificados.</p>
         
         <div className="space-y-6">

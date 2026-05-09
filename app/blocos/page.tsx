@@ -44,7 +44,7 @@ export default function BlocosPage() {
         ></iframe>
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-extrabold font-oswald mb-4 tracking-tight uppercase">Blocos Estruturais</h1>
-          <p className="text-xl md:text-2xl italic">Blocos de concreto em Campinas com entrega rapida para obras em toda a RMC</p>
+          <p className="text-xl md:text-2xl italic">Blocos de concreto em Campinas com entrega rapida para obras da Herrera Materiais para construcao e fabrica de blocos em toda a RMC</p>
         </div>
       </section>
 

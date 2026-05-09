@@ -6,7 +6,7 @@ get_header(); ?>
 
 <style>
     .parallax-header {
-        background-image: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)), url('https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg');
+        background-image: linear-gradient(rgba(0,0,0,0.72), rgba(0,0,0,0.72)), url('https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg');
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -54,7 +54,7 @@ get_header(); ?>
                 </div>
                 <div class="bg-white rounded-3xl border border-orange-100 p-8 shadow-xl">
                     <h2 class="text-2xl font-bold mb-4">Orçamento Personalizado</h2>
-                    <p class="text-gray-600 mb-6">Fale com nossos especialistas para escolher o modelo ideal de borda para o projeto da sua piscina em Campinas e RMC.</p>
+                    <p class="text-gray-600 mb-6">Fale com nossos especialistas para escolher o modelo ideal de borda para o projeto da sua piscina na Herrera Materiais para construcao e fabrica de blocos em Campinas e RMC.</p>
                     <a href="https://wa.me/5519984515960?text=<?php echo rawurlencode('Ola! Quero orcar bordas atermicas para piscina em Campinas.'); ?>" target="_blank" class="inline-flex w-full justify-center rounded-xl bg-green-500 px-6 py-4 font-bold text-white transition hover:bg-green-600">Solicitar cotacao</a>
                 </div>
             </div>
@@ -71,7 +71,7 @@ get_header(); ?>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                 <?php
                 $bordas = [
-                    ['name' => "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", 'price' => "69,20", 'img' => "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg"],
+                    ['name' => "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", 'price' => "69,20", 'img' => "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg"],
                     ['name' => "Borda Atérmica Piscina 50x20x1,5cm Malibu Cinza Areia De Qua...", 'price' => "52,53", 'img' => "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png"],
                     ['name' => "Borda Atérmica Piscina - Havaí 100 X 27,5 X 25 X 4 X 2,5cm F...", 'price' => "318,37", 'img' => "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg"],
                     ['name' => "Borda Atérmica Piscina 50x15x1,5cm Cinza - Areia De Quartzo I...", 'price' => "45,63", 'img' => "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x15x1,5cm_cinza_areia_de_quartzo_i_1570814144_b30e_300x300.jpg"],

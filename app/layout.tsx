@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 
 export const metadata: Metadata = {
-  title: "Material de Construcao em Campinas e RMC | Olaria Herrera",
-  description: "Olaria Herrera vende blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos com entrega rapida em Campinas e regiao.",
+  title: "Material de Construcao em Campinas e RMC | Herrera Materiais para construcao e fabrica de blocos",
+  description: "Herrera Materiais para construcao e fabrica de blocos vende blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos com entrega rapida em Campinas e regiao.",
 };
 
 export default function RootLayout({

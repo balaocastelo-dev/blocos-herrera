@@ -135,8 +135,8 @@ get_header(); ?>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
-                    <h3 class="text-xl font-bold mb-3">Vocês atendem Campinas e RMC com revestimento para piscina?</h3>
-                    <p class="text-gray-600">Sim. A pagina foi reforcada para buscas de Campinas e cidades proximas, com atendimento comercial via WhatsApp.</p>
+                    <h3 class="text-xl font-bold mb-3">Vocês entregam revestimentos em Campinas e RMC?</h3>
+                    <p class="text-gray-600">Sim. A Herrera Materiais para construcao e fabrica de blocos atende Campinas e cidades proximas com atendimento comercial via WhatsApp.</p>
                 </div>
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
                     <h3 class="text-xl font-bold mb-3">Quais marcas voces trabalham?</h3>

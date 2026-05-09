@@ -2,8 +2,27 @@
 
 import Link from "next/link";
 import AdminEditable from "@/components/AdminEditable";
+import ProductCarousel from "@/components/ProductCarousel";
 
 export default function Home() {
+  const revestimentos = [
+    { name: "Revestimento para Piscina 10x10cm Noronha Jade Mesh Eliane", price: "138,05", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_noronha_jade_30x40,10cm_eliane_92004465_e723_300x300.JPG" },
+    { name: "Revestimento para Piscina 10x10cm Noronha Mar Mesh Eliane", price: "138,05", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_noronha_mar_30x40,1cm_eliane_92009582_4af0_300x300.JPG" },
+    { name: "Revestimento para Piscina 20x20cm Hijau Verde Artens", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_brilhante_hijau_verde_20x20cm_91920073_7069_300x300.JPG" },
+    { name: "Revestimento para Piscina 20x20cm Hijau Azul Artens", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_brilhante_hijau_azul_20x20cm_91920052_011b_300x300.JPG" },
+    { name: "Revestimento para Piscina 20x20cm Hijau Verde Artens (Acetinado)", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_acetinado_hijau_verde_20x20cm_91920080_83da_300x300.JPG" },
+    { name: "Revestimento para Piscina 20x20cm Hijau Azul Artens (Acetinado)", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_acetinado_hijau_azul_20x20cm_91920066_1e88_300x300.JPG" },
+  ];
+
+  const bordas = [
+    { name: "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", price: "69,20", img: "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" },
+    { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Cinza Areia De Qua...", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png" },
+    { name: "Borda Atérmica Piscina - Havaí 100 X 27,5 X 25 X 4 X 2,5cm F...", price: "318,37", img: "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg" },
+    { name: "Borda Atérmica Piscina 50x15x1,5cm Cinza - Areia De Quartzo I...", price: "45,63", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x15x1,5cm_cinza_areia_de_quartzo_i_1570814144_b30e_300x300.jpg" },
+    { name: "Borda Atérmica Antiderrapante Para Piscina 50x25x1,5cm Malibu...", price: "57,40", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_antiderrapante_para_piscina_50x25x1,5cm_malibu_1570494403_066f_300x300.jpg" },
+    { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Champagne Areia De", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_champagne_areia_de_1570435806_3697_300x300.jpg" },
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -16,7 +35,7 @@ export default function Home() {
           className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none -z-10"
         ></iframe>
         <div className="max-w-4xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-extrabold font-oswald mb-6 tracking-tight">OLARIA HERRERA</h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold font-oswald mb-6 tracking-tight">Herrera Materiais para construcao e fabrica de blocos</h1>
           <p className="text-xl md:text-2xl mb-4 font-light italic">Material de construcao em Campinas com entrega rapida para obras em toda a RMC</p>
           <p className="max-w-3xl mx-auto text-base md:text-lg text-orange-100 mb-8">Blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos com atendimento agil pelo WhatsApp para Campinas, Hortolandia, Sumare, Paulinia, Valinhos e cidades vizinhas.</p>
           <div className="flex flex-col md:flex-row gap-4 justify-center">
@@ -52,10 +71,14 @@ export default function Home() {
             <ProductCard id="areia-home" title="Areia (Fina/Media/Grossa)" price="R$ 150,00" unit="/ Metro (Min. 7m)" img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbaVMQuZbSa8KchhDeWYcYc7gHk9JeshP6fg&s" />
             <ProductCard id="pedra-home" title="Pedra e Pedrisco" price="R$ 200,00" unit="/ Metro (Min. 7m)" img="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" />
             <ProductCard id="piscina-home" title="Revestimentos (Piscina)" price="Consulte" unit="/ m²" img="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=800&q=80" link="/revestimentos" />
-            <ProductCard id="bordas-home" title="Bordas Atérmicas" price="Consulte" unit="/ Unidade" img="https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg" link="/bordas-atermicas" />
+            <ProductCard id="bordas-home" title="Bordas Atérmicas" price="Consulte" unit="/ Unidade" img="https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" link="/bordas-atermicas" />
           </div>
         </div>
       </section>
+
+      {/* Product Carousels */}
+      <ProductCarousel title="Destaques em Revestimentos" products={revestimentos} idPrefix="rev-home" />
+      <ProductCarousel title="Destaques em Bordas Atérmicas" products={bordas} idPrefix="borda-home-carousel" />
 
       {/* City Pages Links */}
       <section className="py-20 bg-white">

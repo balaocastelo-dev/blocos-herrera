@@ -53,7 +53,7 @@ export default function RevestimentosPage() {
       <section className="parallax-header text-white text-center px-4 h-[48vh] flex items-center justify-center bg-[url('https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=1950&q=80')] bg-fixed bg-center bg-no-repeat bg-cover">
         <div className="max-w-4xl">
           <h1 className="text-5xl md:text-6xl font-extrabold font-oswald mb-4 tracking-tight uppercase">Revestimentos para Piscina</h1>
-          <p className="text-xl md:text-2xl italic">Acabamentos e revestimentos de alta qualidade para sua obra em Campinas</p>
+          <p className="text-xl md:text-2xl italic">Acabamentos e revestimentos de alta qualidade para sua obra na Herrera Materiais para construcao e fabrica de blocos em Campinas</p>
         </div>
       </section>
 

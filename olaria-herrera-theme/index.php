@@ -43,7 +43,7 @@
         <div class="hero-overlay"></div>
         <iframe src="https://www.youtube.com/embed/nzUsq1lbKzI?autoplay=1&mute=1&loop=1&playlist=nzUsq1lbKzI&controls=0&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
         <div class="max-w-4xl relative z-10">
-            <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-6 tracking-tight">OLARIA HERRERA</h1>
+            <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-6 tracking-tight">Herrera Materiais para construcao e fabrica de blocos</h1>
             <p class="text-xl md:text-2xl mb-4 font-light italic">Material de construcao em Campinas com entrega rapida para obras em toda a RMC</p>
             <p class="max-w-3xl mx-auto text-base md:text-lg text-orange-100 mb-8">Blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos com atendimento agil pelo WhatsApp para Campinas, Hortolandia, Sumare, Paulinia, Valinhos e cidades vizinhas.</p>
             <div class="flex flex-col md:flex-row gap-4 justify-center">
@@ -94,7 +94,7 @@
                 <div>
                     <p class="text-orange-600 font-bold uppercase tracking-[0.3em] mb-4">SEO local para Campinas e RMC</p>
                     <h2 class="text-4xl font-bold font-oswald mb-6 uppercase">Depósito de material de construção em Campinas com foco em busca local e conversão</h2>
-                    <p class="text-gray-700 text-lg mb-6">A Olaria Herrera foi posicionada neste projeto para aparecer com força nas buscas por material de construcao em Campinas, blocos de concreto em Campinas, areia em Campinas, pedra em Campinas, pedrisco em Campinas, cimento em Campinas e revestimento para piscina em Campinas e regiao.</p>
+                    <p class="text-gray-700 text-lg mb-6">A Herrera Materiais para construcao e fabrica de blocos foi posicionada neste projeto para aparecer com força nas buscas por material de construcao em Campinas, blocos de concreto em Campinas, areia em Campinas, pedra em Campinas, pedrisco em Campinas, cimento em Campinas e revestimento para piscina em Campinas e regiao.</p>
                     <div class="flex flex-wrap gap-3">
                         <span class="chip">Material de construcao em Campinas</span>
                         <span class="chip">Blocos estruturais em Campinas</span>
@@ -132,7 +132,7 @@
                     ['name' => 'Areia (Fina/Média/Grossa)', 'price' => 150.00, 'image' => get_template_directory_uri() . '/assets/img/areia.jpg', 'unit' => 'Metro (Mín. 7m)', 'id' => 'areia-home'],
                     ['name' => 'Pedra e Pedrisco', 'price' => 200.00, 'image' => get_template_directory_uri() . '/assets/img/pedra.jpg', 'unit' => 'Metro (Mín. 7m)', 'id' => 'pedra-home'],
                     ['name' => 'Revestimentos (Piscina)', 'price' => 0, 'image' => get_template_directory_uri() . '/assets/img/piscina.jpg', 'unit' => 'm²', 'id' => 'piscina-home', 'page' => 'revestimentos'],
-                    ['name' => 'Bordas Atérmicas', 'price' => 0, 'image' => 'https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x25x2,0cm_maresias__branca_areia_d_1570471570_82ee_300x300.jpg', 'unit' => 'Unidade', 'id' => 'bordas-home', 'page' => 'bordas-atermicas'],
+                    ['name' => 'Bordas Atérmicas', 'price' => 0, 'image' => 'https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg', 'unit' => 'Unidade', 'id' => 'bordas-home', 'page' => 'bordas-atermicas'],
                 ];
 
                 foreach ($products as $product): 
@@ -265,7 +265,7 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="text-4xl font-bold font-oswald mb-6 uppercase">Onde Estamos</h2>
-                <p class="text-lg text-gray-600 mb-8">Visite nossa olaria ou solicite sua entrega. Atendemos Campinas e cidades da RMC com foco em obras residenciais, comerciais e industriais.</p>
+                <p class="text-lg text-gray-600 mb-8">Visite nossa empresa ou solicite sua entrega. Atendemos Campinas e cidades da RMC com foco em obras residenciais, comerciais e industriais.</p>
                 <div class="space-y-4">
                     <div class="flex items-start space-x-4">
                         <div class="bg-orange-600 p-2 rounded-lg text-white mt-1">
@@ -307,7 +307,7 @@
                     <p class="text-gray-600">Basta informar no WhatsApp a quantidade, cidade de entrega e tipo de material. A equipe retorna com orientacao comercial e disponibilidade.</p>
                 </div>
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
-                    <h3 class="text-xl font-bold mb-3">A Olaria Herrera atende construtoras e obras residenciais?</h3>
+                    <h3 class="text-xl font-bold mb-3">A Herrera Materiais para construcao e fabrica de blocos atende construtoras e obras residenciais?</h3>
                     <p class="text-gray-600">Atende ambos os perfis, desde pequenas reformas ate obras maiores em Campinas e regiao.</p>
                 </div>
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">

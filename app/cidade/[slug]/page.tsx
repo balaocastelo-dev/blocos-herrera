@@ -7,7 +7,7 @@ const cityData: { [key: string]: any } = {
   'campinas': {
     name: 'Campinas',
     headline: 'Material de Construcao em Campinas',
-    description: 'A Olaria Herrera atende Campinas com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos para obras residenciais, comerciais e industriais.',
+    description: 'A Herrera Materiais para construcao e fabrica de blocos atende Campinas com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos para obras residenciais, comerciais e industriais.',
     keywords: 'material de construcao em Campinas, blocos de concreto em Campinas, areia em Campinas, pedra em Campinas',
   },
   'hortolandia': {
@@ -19,7 +19,7 @@ const cityData: { [key: string]: any } = {
   'sumare': {
     name: 'Sumare',
     headline: 'Material de Construcao em Sumare',
-    description: 'A Olaria Herrera atende Sumare com material de construcao, blocos estruturais, areia, pedra, pedrisco e atendimento agil pelo WhatsApp.',
+    description: 'A Herrera Materiais para construcao e fabrica de blocos atende Sumare com material de construcao, blocos estruturais, areia, pedra, pedrisco e atendimento agil pelo WhatsApp.',
     keywords: 'material de construcao em sumare, blocos de concreto sumare, areia em sumare, pedra em sumare',
   },
   'paulinia': {
@@ -31,19 +31,19 @@ const cityData: { [key: string]: any } = {
   'valinhos': {
     name: 'Valinhos',
     headline: 'Material de Construcao em Valinhos',
-    description: 'A Olaria Herrera atende Valinhos com material para obra, blocos, areia, pedra, pedrisco e apoio comercial pelo WhatsApp.',
+    description: 'A Herrera Materiais para construcao e fabrica de blocos atende Valinhos com material para obra, blocos, areia, pedra, pedrisco e apoio comercial pelo WhatsApp.',
     keywords: 'material de construcao em valinhos, blocos de concreto valinhos, areia em valinhos, pedra em valinhos',
   },
   'vinhedo': {
     name: 'Vinhedo',
     headline: 'Material de Construcao em Vinhedo',
-    description: 'Material de construcao em Vinhedo com entrega para obras, blocos estruturais, areia, pedra, pedrisco e atendimento rapido da Olaria Herrera.',
+    description: 'Material de construcao em Vinhedo com entrega para obras, blocos estruturais, areia, pedra, pedrisco e atendimento rapido da Herrera Materiais para construcao e fabrica de blocos.',
     keywords: 'material de construcao em vinhedo, blocos de concreto vinhedo, areia em vinhedo, pedra em vinhedo',
   },
   'monte-mor': {
     name: 'Monte Mor',
     headline: 'Material de Construcao em Monte Mor',
-    description: 'A Olaria Herrera atende Monte Mor com blocos estruturais, areia, pedra, pedrisco e materiais para obras residenciais e comerciais.',
+    description: 'A Herrera Materiais para construcao e fabrica de blocos atende Monte Mor com blocos estruturais, areia, pedra, pedrisco e materiais para obras residenciais e comerciais.',
     keywords: 'material de construcao em monte mor, blocos de concreto monte mor, areia em monte mor, pedra em monte mor',
   },
   'nova-odessa': {
@@ -88,7 +88,7 @@ export default function CityPage() {
           </div>
           <div className="rounded-2xl border border-orange-100 bg-orange-50 p-6">
             <h2 className="mb-3 text-2xl font-bold text-orange-800 uppercase">Atendimento comercial</h2>
-            <p className="text-gray-700">A Olaria Herrera atende {city.name} com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos para obras residenciais, comerciais e industriais.</p>
+            <p className="text-gray-700">A Herrera Materiais para construcao e fabrica de blocos atende {city.name} com blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos para obras residenciais, comerciais e industriais.</p>
           </div>
           <div className="rounded-2xl border border-orange-100 bg-orange-50 p-6">
             <h2 className="mb-3 text-2xl font-bold text-orange-800 uppercase">Conversao rapida</h2>
@@ -112,7 +112,7 @@ export default function CityPage() {
             </div>
             <div className="bg-white rounded-3xl border border-orange-100 p-8 shadow-xl">
               <h2 className="text-2xl font-bold mb-4">Pedir cotacao agora</h2>
-              <p className="text-gray-600 mb-6">Fale com a equipe da Olaria Herrera para cotar blocos, areia, pedra, pedrisco, cimento e revestimentos para entrega em {city.name}.</p>
+              <p className="text-gray-600 mb-6">Fale com a equipe da Herrera Materiais para construcao e fabrica de blocos para cotar blocos, areia, pedra, pedrisco, cimento e revestimentos para entrega em {city.name}.</p>
               <a href={`https://wa.me/5519984515960?text=${encodeURIComponent('Ola! Quero cotar material de construcao para entrega em ' + city.name + '.')}`} target="_blank" rel="noopener noreferrer" className="inline-flex w-full justify-center rounded-xl bg-green-500 px-6 py-4 font-bold text-white transition hover:bg-green-600">WhatsApp de vendas</a>
             </div>
           </div>

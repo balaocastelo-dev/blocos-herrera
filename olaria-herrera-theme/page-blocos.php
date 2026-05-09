@@ -48,7 +48,7 @@ get_header(); ?>
         <iframe src="https://www.youtube.com/embed/nzUsq1lbKzI?autoplay=1&mute=1&loop=1&playlist=nzUsq1lbKzI&controls=0&rel=0&showinfo=0&iv_load_policy=3" frameborder="0" allow="autoplay; encrypted-media"></iframe>
         <div class="max-w-4xl relative z-10">
             <h1 class="text-5xl md:text-7xl font-extrabold font-oswald mb-4 tracking-tight">BLOCOS ESTRUTURAIS</h1>
-            <p class="text-xl md:text-2xl italic">Blocos de concreto em Campinas com entrega rapida para obras em toda a RMC</p>
+            <p class="text-xl md:text-2xl italic">Blocos de concreto em Campinas com entrega rapida para obras da Herrera Materiais para construcao e fabrica de blocos em toda a RMC</p>
         </div>
     </section>
 
@@ -128,8 +128,8 @@ get_header(); ?>
             </div>
             <div class="grid gap-6 md:grid-cols-2">
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
-                    <h3 class="text-xl font-bold mb-3">Vocês vendem bloco estrutural para Campinas e regiao?</h3>
-                    <p class="text-gray-600">Sim. A pagina trabalha a busca por bloco estrutural em Campinas e atende tambem cidades da RMC com foco em entrega agil.</p>
+                    <h3 class="text-xl font-bold mb-3">Vocês entregam blocos estruturais em Campinas e regiao?</h3>
+                    <p class="text-gray-600">Sim. A Herrera Materiais para construcao e fabrica de blocos trabalha a busca por bloco estrutural em Campinas e atende tambem cidades da RMC com foco em entrega agil.</p>
                 </div>
                 <div class="rounded-2xl border border-gray-200 p-6 shadow-sm">
                     <h3 class="text-xl font-bold mb-3">Os precos dos blocos foram ajustados como?</h3>

@@ -1,7 +1,7 @@
-﻿# Guia de SEO, Google e Publicacao
+# Guia de SEO, Google e Publicacao
 
 ## Google Business Profile
-- Padronizar nome: Olaria Herrera.
+- Padronizar nome: Herrera Materiais para construcao e fabrica de blocos.
 - Confirmar telefone: 19 98451-5960.
 - Confirmar endereco: Rua Julia Aberle Fritz, 200 - Parque Vista Alegre - Campinas/SP.
 - Selecionar categorias principais e secundarias ligadas a material de construcao, blocos de concreto e deposito.

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
-            <h2 className="text-2xl font-bold text-orange-500 font-oswald mb-6">OLARIA HERRERA</h2>
+            <h2 className="text-2xl font-bold text-orange-500 font-oswald mb-6 uppercase">Herrera Materiais para construcao e fabrica de blocos</h2>
             <p className="text-gray-400">Material de construcao em Campinas com foco em blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos para obras residenciais, comerciais e industriais.</p>
           </div>
           <div>
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm space-y-2">
-          <p>&copy; 2026 Olaria Herrera. Todos os direitos reservados. Pedido minimo de 1000 blocos.</p>
+          <p>&copy; 2026 Herrera Materiais para construcao e fabrica de blocos. Todos os direitos reservados. Pedido minimo de 1000 blocos.</p>
         </div>
       </div>
     </footer>

@@ -11,7 +11,7 @@ export default function Header() {
           <AdminEditable id="site-logo" type="img">
             <img 
               src="/assets/img/logo-herrera.jpg" 
-              alt="Olaria Herrera" 
+              alt="Herrera Materiais para construcao e fabrica de blocos" 
               className="h-12 md:h-16" 
             />
           </AdminEditable>
