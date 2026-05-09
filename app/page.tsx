@@ -108,32 +108,6 @@ function FeatureItem({ title, desc, icon }: { title: string; desc: string; icon:
   );
 }
 
-function ProductCard({ id, title, price, unit, img, link }: { id: string; title: string; price: string; unit: string; img: string; link?: string }) {
-  return (
-    <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
-      <div className="h-48 bg-gray-50 flex items-center justify-center p-2">
-        <AdminEditable id={id} type="img">
-          <img src={img} alt={title} className="max-h-full max-w-full object-contain" />
-        </AdminEditable>
-      </div>
-      <div className="p-6 text-center">
-        <h3 className="font-bold text-lg mb-2">{title}</h3>
-        <p className="text-orange-600 text-2xl font-bold mb-4">
-          <AdminEditable id={id} type="price">
-            <span>{price}</span>
-          </AdminEditable>
-          <span className="text-sm text-gray-500 font-normal"> {unit}</span>
-        </p>
-        {link ? (
-          <Link href={link} className="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Ver Catalogo</Link>
-        ) : (
-          <a href={`https://wa.me/5519984515960?text=Gostaria de saber mais sobre ${title}`} className="block text-center border-2 border-orange-600 text-orange-600 font-bold py-2 rounded-lg hover:bg-orange-600 hover:text-white transition">Orcar no WhatsApp</a>
-        )}
-      </div>
-    </div>
-  );
-}
-
 function CityLink({ slug, name, desc }: { slug: string; name: string; desc: string }) {
   return (
     <Link href={`/cidade/${slug}`} className="rounded-2xl border border-orange-100 bg-orange-50 p-6 shadow-sm transition hover:shadow-lg">
