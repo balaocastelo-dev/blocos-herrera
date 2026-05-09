@@ -12,15 +12,21 @@ export default function Home() {
     { name: "Revestimento para Piscina 20x20cm Hijau Azul Artens", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_brilhante_hijau_azul_20x20cm_91920052_011b_300x300.JPG" },
     { name: "Revestimento para Piscina 20x20cm Hijau Verde Artens (Acetinado)", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_acetinado_hijau_verde_20x20cm_91920080_83da_300x300.JPG" },
     { name: "Revestimento para Piscina 20x20cm Hijau Azul Artens (Acetinado)", price: "184,11", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_acetinado_hijau_azul_20x20cm_91920066_1e88_300x300.JPG" },
+    { name: "Revestimento para Piscina 10x10cm Java Mar Mesh Eliane", price: "122,26", img: "https://cdn.leroymerlin.com.br/products/rev_ex_br_bo_10x10_java_mar_mesh_m2_92359071_ae1e_300x300.png" },
+    { name: "Revestimento para Piscina Boreal Ivy 20x20cm Artens", price: "115,68", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_boreal_ivy_20x20cm_artens_91943866_00dc_300x300.JPG" },
+    { name: "Revestimento para Piscina 20x20cm Grace Bay Artens", price: "90,86", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_grace_bay_20x20cm_artens_90700701_70af_300x300.JPG" },
+    { name: "Revestimento para Piscina 10x10cm Noronha Aqua Mesh Eliane", price: "138,05", img: "https://cdn.leroymerlin.com.br/products/revestimento_para_piscina_noronha_agua_mesh_30x40,1cm_92011682_4dad_300x300.png" },
   ];
 
   const bordas = [
-    { name: "Borda Atérmica Piscina 50x25x2,0cm Maresias Branca - Areia D...", price: "69,20", img: "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" },
-    { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Cinza Areia De Qua...", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png" },
-    { name: "Borda Atérmica Piscina - Havaí 100 X 27,5 X 25 X 4 X 2,5cm F...", price: "318,37", img: "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg" },
-    { name: "Borda Atérmica Piscina 50x15x1,5cm Cinza - Areia De Quartzo I...", price: "45,63", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x15x1,5cm_cinza_areia_de_quartzo_i_1570814144_b30e_300x300.jpg" },
-    { name: "Borda Atérmica Antiderrapante Para Piscina 50x25x1,5cm Malibu...", price: "57,40", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_antiderrapante_para_piscina_50x25x1,5cm_malibu_1570494403_066f_300x300.jpg" },
-    { name: "Borda Atérmica Piscina 50x20x1,5cm Malibu Champagne Areia De", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_champagne_areia_de_1570435806_3697_300x300.jpg" },
+    { name: "Borda Atérmica Piscina 50x25cm Premium", price: "69,20", img: "https://cdn.awsli.com.br/2500x2500/1957/1957621/produto/143251805/premium-50x25cm-ugstwe.jpg" },
+    { name: "Borda Atérmica Piscina 50x20cm Malibu Cinza", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_cinza__areia_de_qua_1570435811_4fba_300x300.png" },
+    { name: "Borda Atérmica Piscina Havaí 100x27cm", price: "318,37", img: "https://cdn.leroymerlin.com.br/products/borda__atermica_piscina_havai_100_x_27,5_x_25_x_4_x_2,5cm_f_1568442710_24b1_300x300.jpg" },
+    { name: "Borda Atérmica Piscina 50x15cm Cinza", price: "45,63", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x15x1,5cm_cinza_areia_de_quartzo_i_1570814144_b30e_300x300.jpg" },
+    { name: "Borda Atérmica Malibu Champagne 50x20cm", price: "52,53", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_50x20x1,5cm_malibu_champagne_areia_de_1570435806_3697_300x300.jpg" },
+    { name: "Borda Atérmica Piscina Salinas 50x25cm Fendi", price: "73,28", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina__salinas_50x25x2,5x1,5cm_fendi_areia_1568442702_a1e5_300x300.jpg" },
+    { name: "Borda Atérmica Piscina Salvattore 50x25cm", price: "5.320,00", img: "https://cdn.leroymerlin.com.br/products/borda_atermica_piscina_salvattore_50x25cm_kit_c_60_1569035135_ff1d_300x300.jpg" },
+    { name: "Borda Atérmica Malibu Branca 50x25cm", price: "57,40", img: "https://cdn.leroymerlin.com.br/products/borda__atermica_para__piscina_50x25x1,5cm_malibu_branca__arei_1570289004_3b10_300x300.jpg" },
   ];
 
   const areiaPedra = [
