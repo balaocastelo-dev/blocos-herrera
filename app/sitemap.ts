@@ -1,13 +1,10 @@
-import { MetadataRoute } from 'next';
-import { CITIES } from '@/lib/cities';
-import { PRODUCTS } from '@/lib/products';
+import { MetadataRoute } from "next";
+import { CITIES } from "@/lib/cities";
+import { PRODUCTS } from "@/lib/products";
+import { SITE_URL } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const rawBaseUrl =
-    process.env.NEXT_PUBLIC_SITE_URL || 'https://blocos-herrera.vercel.app';
-  const baseUrl = rawBaseUrl.includes('olariaherrera.com.br')
-    ? 'https://blocos-herrera.vercel.app'
-    : rawBaseUrl;
+  const baseUrl = SITE_URL;
 
   const cityUrls = CITIES.map((city) => ({
     url: `${baseUrl}/cidade/${city.slug}`,

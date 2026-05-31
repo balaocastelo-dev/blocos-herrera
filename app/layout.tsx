@@ -6,31 +6,77 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import AdminProvider from "@/components/AdminProvider";
 import JsonLd from "@/components/JsonLd";
-import { ADDRESS_FULL, SITE_BRAND, SITE_NAME, SITE_URL, WHATSAPP_NUMBER_E164 } from "@/lib/site";
+import { ADDRESS_FULL, SERVICE_AREA_CITIES, SITE_BRAND, SITE_NAME, SITE_URL, WHATSAPP_NUMBER_E164 } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://blocos-herrera.vercel.app"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: SITE_BRAND,
-    template: "%s | Herrera",
+    template: "%s | Herrera Materiais (Campinas)",
   },
   description:
     "Compre blocos estruturais, areia, pedra, pedrisco e materiais para construção com entrega em Campinas e RMC. Atendimento rápido no WhatsApp para orçamento.",
-  robots: {
-    index: true,
-    follow: true,
+  applicationName: SITE_NAME,
+  keywords: [
+    "material de construção em Campinas",
+    "depósito de material de construção",
+    "fábrica de blocos",
+    "blocos estruturais",
+    "blocos de concreto",
+    "areia",
+    "pedra",
+    "pedrisco",
+    "cimento",
+    "revestimentos",
+    "bordas atérmicas",
+    "Campinas",
+    "RMC",
+    "Hortolândia",
+    "Sumaré",
+    "Paulínia",
+    "Valinhos",
+    "Vinhedo",
+  ],
+  alternates: {
+    canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: SITE_URL,
-    siteName: SITE_BRAND,
+    url: "/",
+    siteName: SITE_NAME,
+    title: SITE_BRAND,
+    description:
+      "Blocos estruturais, areia, pedra, pedrisco, cimento e revestimentos com entrega rápida em Campinas e região. Orçamento pelo WhatsApp.",
   },
   twitter: {
     card: "summary_large_image",
+    title: SITE_BRAND,
+    description:
+      "Orçamento rápido no WhatsApp. Entrega em Campinas e região. Blocos, areia, pedra, pedrisco, cimento e revestimentos.",
+  },
+  icons: {
+    icon: [{ url: "/assets/logo.svg" }],
+    apple: [{ url: "/assets/logo.svg" }],
+  },
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: true,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -72,19 +118,7 @@ export default function RootLayout({
                   addressRegion: "SP",
                   addressCountry: "BR",
                 },
-                areaServed: [
-                  "Campinas",
-                  "Hortolândia",
-                  "Sumaré",
-                  "Paulínia",
-                  "Valinhos",
-                  "Vinhedo",
-                  "Monte Mor",
-                  "Nova Odessa",
-                  "Indaiatuba",
-                  "Americana",
-                  "Santa Bárbara d’Oeste",
-                ],
+                areaServed: SERVICE_AREA_CITIES,
                 makesOffer: [
                   "Blocos estruturais",
                   "Blocos de concreto",
