@@ -1,17 +1,23 @@
 import { MetadataRoute } from 'next';
+import { CITIES } from '@/lib/cities';
+import { PRODUCTS } from '@/lib/products';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://olariaherrera.com.br';
-  const cities = [
-    'campinas', 'hortolandia', 'sumare', 'paulinia', 
-    'valinhos', 'vinhedo', 'monte-mor', 'nova-odessa'
-  ];
+  const baseUrl =
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://blocos-herrera.vercel.app';
 
-  const cityUrls = cities.map(city => ({
-    url: `${baseUrl}/cidade/${city}`,
+  const cityUrls = CITIES.map((city) => ({
+    url: `${baseUrl}/cidade/${city.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.8,
+  }));
+
+  const productUrls = PRODUCTS.map((product) => ({
+    url: `${baseUrl}/produtos/${product.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.7,
   }));
 
   return [
@@ -39,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     },
+    ...productUrls,
     ...cityUrls,
   ];
 }

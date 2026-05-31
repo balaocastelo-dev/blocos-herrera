@@ -9,24 +9,36 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center gap-4">
         <Link href="/" className="flex items-center gap-3">
           <AdminEditable id="site-logo" type="img">
-            <img 
-              src="/assets/img/logo-herrera.jpg" 
-              alt="Herrera Materiais para construcao e fabrica de blocos" 
-              className="h-12 md:h-16" 
+            <img
+              src="/assets/img/logo-herrera.svg"
+              alt="Herrera Materiais para Construção | Fábrica de Blocos em Campinas"
+              className="h-12 md:h-16"
             />
           </AdminEditable>
         </Link>
         <nav className="hidden md:flex items-center space-x-6 font-semibold text-sm lg:text-base">
-          <Link href="/" className="hover:text-orange-600 transition">Inicio</Link>
-          <Link href="/blocos" className="hover:text-orange-600 transition">Blocos</Link>
-          <Link href="/revestimentos" className="hover:text-orange-600 transition">Revestimentos</Link>
-          <Link href="/bordas-atermicas" className="hover:text-orange-600 transition">Bordas Atérmicas</Link>
-          <Link href="/#orcamento" className="hover:text-orange-600 transition">Orcamento</Link>
-          <Link href="/#contato" className="hover:text-orange-600 transition">Contato</Link>
+          <Link href="/" className="hover:text-orange-600 transition">
+            Início
+          </Link>
+          <Link href="/blocos" className="hover:text-orange-600 transition">
+            Blocos
+          </Link>
+          <Link href="/revestimentos" className="hover:text-orange-600 transition">
+            Revestimentos
+          </Link>
+          <Link href="/bordas-atermicas" className="hover:text-orange-600 transition">
+            Bordas Atérmicas
+          </Link>
+          <Link href="/#orcamento" className="hover:text-orange-600 transition">
+            Orçamento
+          </Link>
+          <Link href="/#contato" className="hover:text-orange-600 transition">
+            Contato
+          </Link>
         </nav>
-        <a 
-          href="https://wa.me/5519984515960?text=Ola! Quero um orcamento de material de construcao em Campinas." 
-          target="_blank" 
+        <a
+          href="https://wa.me/5519984515960?text=Olá! Quero um orçamento de material de construção em Campinas."
+          target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 text-white px-5 py-3 rounded-full font-bold hover:bg-green-600 transition whitespace-nowrap"
         >
