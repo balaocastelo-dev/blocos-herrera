@@ -113,7 +113,8 @@ export const CITIES: City[] = [
           "Sim. Você pode enviar lista de materiais, endereço e prazo. Retornamos com a cotação e condições de entrega.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento de blocos e materiais para entrega em Campinas.",
+    whatsappText:
+      "Olá! Quero um orçamento de blocos e materiais para entrega em Campinas.",
     canonical: buildCanonical("/cidade/campinas"),
   },
   {
@@ -187,7 +188,8 @@ export const CITIES: City[] = [
           "Sim. Trabalhamos com agregados para concreto e assentamento. Informe o uso para recomendarmos o melhor tipo.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento de blocos e agregados para entrega em Sumaré.",
+    whatsappText:
+      "Olá! Quero um orçamento de blocos e agregados para entrega em Sumaré.",
     canonical: buildCanonical("/cidade/sumare"),
   },
   {
@@ -219,7 +221,8 @@ export const CITIES: City[] = [
           "Sim. Atendemos demandas maiores com pedido organizado e programação de entrega.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento de materiais para entrega em Paulínia.",
+    whatsappText:
+      "Olá! Quero um orçamento de materiais para entrega em Paulínia.",
     canonical: buildCanonical("/cidade/paulinia"),
   },
   {
@@ -247,10 +250,12 @@ export const CITIES: City[] = [
       },
       {
         question: "Posso pedir só areia, pedra ou pedrisco?",
-        answer: "Sim. Informe o endereço e o volume aproximado para cotação e frete.",
+        answer:
+          "Sim. Informe o endereço e o volume aproximado para cotação e frete.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento para entrega de materiais em Valinhos.",
+    whatsappText:
+      "Olá! Quero um orçamento para entrega de materiais em Valinhos.",
     canonical: buildCanonical("/cidade/valinhos"),
   },
   {
@@ -277,7 +282,8 @@ export const CITIES: City[] = [
           "Envie sua lista de materiais e o endereço da obra no WhatsApp. Retornamos com a cotação e opções de entrega.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento de blocos e materiais para entrega em Vinhedo.",
+    whatsappText:
+      "Olá! Quero um orçamento de blocos e materiais para entrega em Vinhedo.",
     canonical: buildCanonical("/cidade/vinhedo"),
   },
   {
@@ -304,4 +310,132 @@ export const CITIES: City[] = [
           "Sim. Solicite sua cotação no WhatsApp informando o endereço e a lista de materiais.",
       },
     ],
-    whatsappText: "Olá! Quero um orçamento de materiais para entrega em Monte Mor.",
+    whatsappText:
+      "Olá! Quero um orçamento de materiais para entrega em Monte Mor.",
+    canonical: buildCanonical("/cidade/monte-mor"),
+  },
+  {
+    slug: "nova-odessa",
+    name: "Nova Odessa",
+    title: "Materiais de Construção em Nova Odessa",
+    description:
+      "Entrega de materiais para obra em Nova Odessa: blocos de concreto, areia, pedra e pedrisco. Orçamento rápido e atendimento direto no WhatsApp.",
+    h1: "Materiais de Construção em Nova Odessa com Atendimento Direto",
+    intro:
+      "Atendemos Nova Odessa com foco em compra fácil: cotação clara, atendimento pelo WhatsApp e entrega combinada conforme a necessidade da obra.",
+    neighborhoods: ["Centro", "Jardim São Jorge", "Santa Rosa", "Jardim Alvorada"],
+    nearbySlugs: ["americana", "sumare", "hortolandia"],
+    topProducts: [
+      PRODUCT_LINKS.bloco9,
+      PRODUCT_LINKS.canaleta,
+      PRODUCT_LINKS.areia,
+      PRODUCT_LINKS.pedra,
+    ],
+    faq: [
+      {
+        question: "Vocês atendem Nova Odessa com entrega?",
+        answer:
+          "Sim. Envie seu endereço e sua lista de materiais no WhatsApp para cotação e programação.",
+      },
+    ],
+    whatsappText:
+      "Olá! Quero um orçamento de materiais para entrega em Nova Odessa.",
+    canonical: buildCanonical("/cidade/nova-odessa"),
+  },
+  {
+    slug: "indaiatuba",
+    name: "Indaiatuba",
+    title: "Materiais de Construção em Indaiatuba",
+    description:
+      "Blocos estruturais, canaletas, areia, pedra e pedrisco com entrega em Indaiatuba. Peça orçamento no WhatsApp e agilize sua compra.",
+    h1: "Materiais de Construção em Indaiatuba: Cotação no WhatsApp",
+    intro:
+      "Atendemos Indaiatuba com foco em blocos e agregados para obra. Solicite orçamento com entrega programada pelo WhatsApp.",
+    neighborhoods: ["Centro", "Jardim Morada do Sol", "Cidade Nova", "Vila Avaí"],
+    nearbySlugs: ["monte-mor", "vinhedo", "valinhos", "campinas"],
+    topProducts: [
+      PRODUCT_LINKS.bloco14,
+      PRODUCT_LINKS.canaleta,
+      PRODUCT_LINKS.areia,
+      PRODUCT_LINKS.pedra,
+    ],
+    faq: [
+      {
+        question: "Como funciona a entrega em Indaiatuba?",
+        answer:
+          "A entrega depende do tipo de material e do volume. Envie local e itens no WhatsApp que retornamos com a melhor opção.",
+      },
+    ],
+    whatsappText:
+      "Olá! Quero um orçamento de blocos e materiais para entrega em Indaiatuba.",
+    canonical: buildCanonical("/cidade/indaiatuba"),
+  },
+  {
+    slug: "americana",
+    name: "Americana",
+    title: "Materiais de Construção em Americana",
+    description:
+      "Materiais para obra em Americana: blocos de concreto, canaletas, areia, pedra e pedrisco com entrega. Orçamento rápido no WhatsApp.",
+    h1: "Materiais de Construção em Americana com Entrega",
+    intro:
+      "Atendemos Americana com materiais essenciais para sua obra. Chame no WhatsApp e receba uma cotação prática para entrega.",
+    neighborhoods: ["Centro", "Cidade Jardim", "Jardim São Paulo", "Jardim Guanabara"],
+    nearbySlugs: ["nova-odessa", "sumare", "hortolandia"],
+    topProducts: [
+      PRODUCT_LINKS.bloco9,
+      PRODUCT_LINKS.canaleta,
+      PRODUCT_LINKS.areia,
+      PRODUCT_LINKS.pedra,
+    ],
+    faq: [
+      {
+        question: "Vocês fazem orçamento para Americana pelo WhatsApp?",
+        answer:
+          "Sim. Envie sua lista de materiais e endereço da obra, e retornamos com a cotação.",
+      },
+    ],
+    whatsappText:
+      "Olá! Quero um orçamento de materiais para entrega em Americana.",
+    canonical: buildCanonical("/cidade/americana"),
+  },
+  {
+    slug: "santa-barbara-do-oeste",
+    name: "Santa Bárbara d’Oeste",
+    title: "Materiais de Construção em Santa Bárbara d’Oeste",
+    description:
+      "Blocos estruturais, areia, pedra e pedrisco com entrega em Santa Bárbara d’Oeste. Atendimento direto no WhatsApp para orçamento.",
+    h1: "Materiais de Construção em Santa Bárbara d’Oeste",
+    intro:
+      "Atendemos Santa Bárbara d’Oeste com materiais de obra e entrega combinada. Fale com a equipe no WhatsApp e receba a cotação.",
+    neighborhoods: ["Centro", "Cidade Nova", "Jardim Europa", "Jardim Santa Rita"],
+    nearbySlugs: ["americana", "nova-odessa", "sumare"],
+    topProducts: [
+      PRODUCT_LINKS.bloco9,
+      PRODUCT_LINKS.areia,
+      PRODUCT_LINKS.pedra,
+      PRODUCT_LINKS.canaleta,
+    ],
+    faq: [
+      {
+        question: "Vocês entregam em Santa Bárbara d’Oeste?",
+        answer:
+          "Sim. Solicite sua cotação no WhatsApp e combinamos entrega conforme tipo de material e volume.",
+      },
+    ],
+    whatsappText:
+      "Olá! Quero um orçamento de materiais para entrega em Santa Bárbara d’Oeste.",
+    canonical: buildCanonical("/cidade/santa-barbara-do-oeste"),
+  },
+] as const;
+
+export const CITY_BY_SLUG = Object.fromEntries(
+  CITIES.map((city) => [city.slug, city]),
+) as Record<CitySlug, City>;
+
+export function getCity(slug: string) {
+  return (CITY_BY_SLUG as Record<string, City | undefined>)[slug];
+}
+
+export function buildCityTitle(cityName: string) {
+  return `${cityName} | ${SITE_BRAND}`;
+}
