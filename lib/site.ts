@@ -1,5 +1,9 @@
-export const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://blocos-herrera.vercel.app";
+const OFFICIAL_SITE_URL = "https://blocos-herrera.vercel.app";
+const RAW_SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || OFFICIAL_SITE_URL;
+
+export const SITE_URL = RAW_SITE_URL.includes("olariaherrera.com.br")
+  ? OFFICIAL_SITE_URL
+  : RAW_SITE_URL;
 
 export const SITE_NAME = "Herrera Materiais para Construção";
 export const SITE_BRAND =
