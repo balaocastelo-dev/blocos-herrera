@@ -84,16 +84,8 @@ export default function HomePage() {
       <TrustBar />
 
       <section className="bg-white py-4" id="produtos">
-        <ProductCarousel
-          title="Destaques em blocos e pisos"
-          products={destaquesBlocos}
-          idPrefix="home-destaque-blocos"
-        />
-        <ProductCarousel
-          title="Agregados para obra"
-          products={destaquesAgregados}
-          idPrefix="home-destaque-agregados"
-        />
+        <ProductCarousel title="Destaques em blocos e pisos" products={destaquesBlocos} idPrefix="home-destaque-blocos" />
+        <ProductCarousel title="Agregados para obra" products={destaquesAgregados} idPrefix="home-destaque-agregados" />
       </section>
 
       <section id="cidades">
@@ -108,8 +100,7 @@ export default function HomePage() {
                 Sua obra não pode parar. Peça seu orçamento agora.
               </h2>
               <p className="mt-3 text-gray-600">
-                Envie sua lista (ou a medida do bloco), a cidade de entrega e o prazo. Retornamos
-                com a cotação e orientações para comprar do jeito certo.
+                Envie sua lista (ou a medida do bloco), a cidade de entrega e o prazo. Retornamos com a cotação e orientações para comprar do jeito certo.
               </p>
             </div>
             <CTAWhatsApp
