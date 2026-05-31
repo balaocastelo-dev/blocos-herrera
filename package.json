@@ -6,10 +6,10 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "node ./node_modules/next/dist/cli/next-dev.js",
+    "build": "node ./node_modules/next/dist/cli/next-build.js",
+    "start": "node ./node_modules/next/dist/cli/next-start.js",
+    "lint": "node ./node_modules/next/dist/cli/next-lint.js"
   },
   "dependencies": {
     "next": "14.2.3",
