@@ -8,13 +8,7 @@ type HeroProps = {
   badges?: string[];
 };
 
-export default function Hero({
-  h1,
-  subtitle,
-  primaryCta,
-  secondaryCta,
-  badges,
-}: HeroProps) {
+export default function Hero({ h1, subtitle, primaryCta, secondaryCta, badges }: HeroProps) {
   const isPrimaryExternal = primaryCta.href.startsWith("http");
   const isSecondaryExternal = secondaryCta?.href?.startsWith("http");
 
@@ -49,7 +43,7 @@ export default function Hero({
                   {primaryCta.label}
                 </Link>
               )}
-              {secondaryCta ?
+              {secondaryCta ? (
                 isSecondaryExternal ? (
                   <a
                     href={secondaryCta.href}
@@ -66,7 +60,8 @@ export default function Hero({
                   >
                     {secondaryCta.label}
                   </Link>
-                ) : null}
+                )
+              ) : null}
             </div>
             {badges?.length ? (
               <ul className="mt-8 flex flex-wrap gap-3">

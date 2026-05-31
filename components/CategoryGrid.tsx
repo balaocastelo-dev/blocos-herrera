@@ -1,13 +1,5 @@
 import Link from "next/link";
-import {
-  Blocks,
-  BrickWall,
-  Droplets,
-  Gem,
-  LayoutGrid,
-  Waves,
-  Sun,
-} from "lucide-react";
+import { Blocks, BrickWall, Droplets, Gem, LayoutGrid, Waves, Sun } from "lucide-react";
 
 const CATEGORIES = [
   {
@@ -82,7 +74,9 @@ export default function CategoryGrid() {
                 <div>
                   <h3 className="text-base font-bold text-gray-900">{title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{description}</p>
-                  <p className="mt-4 text-sm font-semibold text-orange-700">Ver detalhes</p>
+                  <p className="mt-4 text-sm font-semibold text-orange-700">
+                    Ver detalhes
+                  </p>
                 </div>
               </div>
             </Link>
