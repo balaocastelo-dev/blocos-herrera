@@ -89,8 +89,8 @@ export default function ProductPage({ params }: PageProps) {
                 </Link>
               </div>
               <p className="mt-4 text-sm text-gray-500">
-                Dica: envie também a quantidade e a cidade de entrega (Campinas, Hortolândia,
-                Sumaré, Paulínia e região) para agilizar a cotação.
+                Dica: envie também a quantidade e a cidade de entrega (Campinas, Hortolândia, Sumaré,
+                Paulínia e região) para agilizar a cotação.
               </p>
             </div>
           </div>

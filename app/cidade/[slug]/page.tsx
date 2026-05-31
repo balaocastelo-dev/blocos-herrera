@@ -62,10 +62,7 @@ export default function CityPage({ params }: PageProps) {
                   <ul className="mt-4 space-y-2 text-sm">
                     {city.topProducts.map((p) => (
                       <li key={p.href}>
-                        <Link
-                          href={p.href}
-                          className="font-semibold text-orange-700 hover:text-orange-800"
-                        >
+                        <Link href={p.href} className="font-semibold text-orange-700 hover:text-orange-800">
                           {p.label}
                         </Link>
                       </li>
@@ -94,7 +91,9 @@ export default function CityPage({ params }: PageProps) {
 
       <section className="bg-gray-50 py-16">
         <div className="mx-auto max-w-6xl px-4">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900">Cidades próximas</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+            Cidades próximas
+          </h2>
           <p className="mt-2 text-gray-600">
             Selecione outra cidade para ver informações e pedir orçamento com entrega na região.
           </p>
