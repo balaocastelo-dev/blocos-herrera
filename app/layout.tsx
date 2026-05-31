@@ -6,13 +6,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import AdminProvider from "@/components/AdminProvider";
 import JsonLd from "@/components/JsonLd";
-import {
-  ADDRESS_FULL,
-  SITE_BRAND,
-  SITE_NAME,
-  SITE_URL,
-  WHATSAPP_NUMBER_E164,
-} from "@/lib/site";
+import { ADDRESS_FULL, SITE_BRAND, SITE_NAME, SITE_URL, WHATSAPP_NUMBER_E164 } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });

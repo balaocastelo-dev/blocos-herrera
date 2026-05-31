@@ -21,8 +21,7 @@ export default function TwitterImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 80,
-          background:
-            "linear-gradient(135deg, #0b1220 0%, #111827 60%, #1f2937 100%)",
+          background: "linear-gradient(135deg, #0b1220 0%, #111827 60%, #1f2937 100%)",
         }}
       >
         <div
@@ -41,14 +40,7 @@ export default function TwitterImage() {
             position: "relative",
           }}
         >
-          <div
-            style={{
-              fontSize: 56,
-              fontWeight: 800,
-              color: "#ffffff",
-              lineHeight: 1.1,
-            }}
-          >
+          <div style={{ fontSize: 56, fontWeight: 800, color: "#ffffff", lineHeight: 1.1 }}>
             {SITE_NAME}
           </div>
           <div style={{ fontSize: 30, fontWeight: 600, color: "#fdba74" }}>
