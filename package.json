@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=18.0.0"
+    "node": "20.x"
   },
   "scripts": {
-    "dev": "node ./node_modules/next/dist/cli/next-dev.js",
-    "build": "node ./node_modules/next/dist/cli/next-build.js",
-    "start": "node ./node_modules/next/dist/cli/next-start.js",
-    "lint": "node ./node_modules/next/dist/cli/next-lint.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "next": "14.2.3",
